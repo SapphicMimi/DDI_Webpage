@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="estilos/globals.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/cards.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/carrousel-movil.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <header class="header">
+        <img class="logotype" src="img/header/logotype.png" />
+        <nav class="botones-nav">
+          <button class="manga-button text">Manga</button>
+          <button class="anime-button text">Anime</button>
+        </nav>
+        <aside class="user-functions">
+          <nav class="search-bar">
+            <img class="lupa" src="img/header/lupa.png"/>
+            <input class="buscador" type="text" placeholder="Search...">
+          </nav>
+          <button class="login-button text">Login</button>
+          <button class="sign-up-button text">Sign Up</button>
+          <button id="menu" class="menu"><i class="bi bi-list-task"></i></button>
+        </aside>      
+    </header>
+    <section id="menu_desplegable" class="menu-desplegable">
+      <button class="botones-menu text">Manga</button>
+      <button class="botones-menu text">Anime</button>
+      <button class="botones-menu text">Login</button>
+      <button class="botones-menu text">Sign Up</button>
+      <p class="text">
+        Copyright © Tokyo Archive All Rights Reserved.
+      </p>
+      <p class="text">
+        Powered by DAW.
+      </p>
+    </section>
+    <section class="section-anime-movil">
+      <article class="contenedor-carrousel-movil">
+        <article class="carrousel-movil">
+          <aside class="carrousel-slide-movil">
+            <img src="img/anime/movil/frieren-movil.jpg">
+          </aside>
+          <aside class="ocultacion">
+            <img src="img/anime/movil/elite-movil.jpg">
+          </aside>
+          <aside class="ocultacion">
+            <img src="img/anime/movil/jujus-movil.jpg">
+          </aside>
+          <aside class="ocultacion">
+            <img src="img/anime/movil/momochi-movil.jpg">
+          </aside>
+          <aside class="ocultacion">
+            <img src="img/anime/movil/tales-movil.jpg">
+          </aside>
+          <aside class="ocultacion">
+            <img src="img/anime/movil/solo-movil.jpg">
+          </aside>
+        </article>
+      </article>
+
+      <article class="anime-movil">
+        <article class="contenedor-anime">
+          <h1 class="titulo-anime">Anime</h1>
+        </article>
+        <aside class="frame-movil">
+          <article class="carrousel-titulo-movil">
+            <article class="carrousel-titulo-img">
+              <img src="img/anime/titulos/frieren-titulo.png">
+            </article>
+            <article class="ocultacion">
+              <img src="img/anime/titulos/elite-titulo.png">
+            </article>
+            <article class="ocultacion">
+              <img src="img/anime/titulos/jujus-titulo.png">
+            </article>
+            <article class="ocultacion">
+              <img src="img/anime/titulos/momochi-titulo.png">
+            </article>
+            <article class="ocultacion">
+              <img src="img/anime/titulos/tales-titulo.png">
+            </article>
+            <article class="ocultacion">
+              <img src="img/anime/titulos/solo-titulo.png">
+            </article>
+          </article>
+          <article class="caja-comenzar">
+            <img class="img-play" src="img/anime/recursos/polygon.svg">
+            <button class="texto-comenzar">COMENZAR A VER</button>
+          </article>
+          <article class="botones-movil">
+              <button class="boton-pink"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+          </article>
+        </aside>
+      </article>
+    </section>
+    <section class="section-anime-pc">
+      <article class="contenedor-carrousel">
+        <article class="carrousel">
+          <aside id="img0" class="carrousel-slide">
+            <picture> 
+              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/tate.jpg">-->
+              <img src="img/anime/pc-tablet/tate-recort.jpg">
+            </picture>
+          </aside>
+          <aside id="img1" class="carrousel-slide ocultacion">
+            <picture> 
+              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/elite.jpg">-->
+              <img src="img/anime/pc-tablet/elite-recort.jpg">
+            </picture>
+          </aside>
+          <aside id="img2" class="carrousel-slide ocultacion">
+            <picture> 
+              <!-- <source type="image/jpg" media="(max-width: 1854px)" srcset="img/jujus.jpg">-->
+              <img src="img/anime/pc-tablet/jujus-recort.jpg">
+            </picture>
+          </aside>
+          <aside id="img3" class="carrousel-slide ocultacion">
+            <picture> 
+              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/momochi.jpg">-->
+              <img src="img/anime/pc-tablet/momochi-recort.jpg">
+            </picture>
+          </aside>
+          <aside id="img4" class="carrousel-slide ocultacion">
+            <picture> 
+              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/tales.jpg">-->
+              <img src="img/anime/pc-tablet/tales-recort.jpg">
+            </picture>
+          </aside>
+          <aside id="img5" class="carrousel-slide ocultacion">
+            <picture> 
+              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/solo.jpg">-->
+              <img src="img/anime/pc-tablet/solo-recort.jpg">
+            </picture>
+          </aside>
+        </article>
+      </article>
+      <article class="anime">
+        <h1 class="titulo-anime">Anime</h1>
+        <aside class="frame">
+          <article class="carrousel-titulo">
+            <article id="titu0" class="center">
+              <img src="img/anime/titulos/tate-titulo.png">
+            </article>
+            <article id="titu1" class="ocultacion">
+              <img src="img/anime/titulos/elite-titulo.png">
+            </article>
+            <article id="titu2" class="ocultacion">
+              <img src="img/anime/titulos/jujus-titulo.png">
+            </article>
+            <article id="titu3" class="ocultacion">
+              <img src="img/anime/titulos/momochi-titulo.png">
+            </article>
+            <article id="titu4" class="ocultacion">
+              <img src="img/anime/titulos/tales-titulo.png">
+            </article>
+            <article id="titu5" class="ocultacion">
+              <img src="img/anime/titulos/solo-titulo.png">
+            </article>
+          </article>
+          <article class="descripciones">
+            <p id="desc0" class="description">
+              Iwatani Naofumi es el típico otaku, al menos hasta que un día encuentra en la biblioteca un libro que lo
+              transporta a otro mundo. Allí se convertirá en el Héroe del Escudo, uno de los Cuatro Héroes Cardinales, y
+              tendrá que luchar contra las Olas de la Catástrofe junto a los otros héroes...
+            </p>
+            <p id="desc1" class="ocultacion">
+              Kiyotaka Ayanokouji acaba de entrar en la Academia Tokyo Koudo Ikusei, de la 
+              cual se dice que el 100% de sus estudiantes acaban yendo a la 
+              universidad o encontrando un buen trabajo. Sin embargo nuestro 
+              protagonista acaba en la Clase 1-D, donde la escuela pone a todos los 
+              alumnos con problemas. Y lo que es más, cada mes la escuela otorga a los
+              estudiantes puntos por valor de 100.000 yenes, y las clases emplean un 
+              sistema por el cual se puede hablar, dormir e incluso molestar a los 
+              compañeros durante las clases.
+            </p>
+            <p id="desc2" class="ocultacion">
+              Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de los humanos 
+              se convierten en Maldiciones que nos acechan en nuestra vida diaria. Las
+              Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a 
+              las personas a sufrir terribles desgracias e incluso dirigirlas a su 
+              muerte. Y lo que es peor: solo una Maldición puede exorcizar otra 
+              Maldición.
+            </p>
+            <p id="desc3" class="ocultacion">
+              El decimosexto cumpleaños de Himari será inolvidable para ella. 
+              Inesperadamente, recibe un testamento donde le dejan en herencia
+              una misteriosa casa: la Casa Momochi. Al llegar allí descubre que dicha 
+              casa estaba construida en el límite entre el mundo
+              humano y el reino espiritual. Allí conoce a Yukari, Ise y un peculiar 
+              chico llamado Aoi que parece esconder un secreto.
+            </p>
+            <p id="desc4" class="ocultacion">
+              Sato es un chico de secundaria enamorado de su mejor amiga, Hime, una chica 
+              preciosa que procede de otro mundo. Cuando ella regresa a su mundo natal
+              para casarse, no se lo piensa dos veces: la sigue y echa por tierra la 
+              boda. Cuando Hime le besa, Sato se convierte en el nuevo nuevo, pero lo 
+              que él no sabía es que Hime es una de las Princesas de los Anillos y su 
+              esposo está destinado a ser el Rey del Anillo, un héroe con un poder 
+              inmenso.
+            </p>
+            <p id="desc5" class="ocultacion">
+              Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más fuerte. 
+              Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo regresó con el Sistema, 
+              un programa que solo él puede ver y que eleva su nivel en todos los sentidos.
+            </p>
+          </article>
+          <article class="caja-comenzar">
+            <img class="img-play" src="img/anime/recursos/polygon.svg">
+            <button class="texto-comenzar">COMENZAR A VER</button>
+          </article>
+          <article class="botones">
+              <button id="anime-button-0" class="boton-pink" onclick="goToSlide(0)"></button>
+              <button id="anime-button-1" class="boton" onclick="goToSlide(1)"></button>
+              <button id="anime-button-2" class="boton" onclick="goToSlide(2)"></button>
+              <button id="anime-button-3" class="boton" onclick="goToSlide(3)"></button>
+              <button id="anime-button-4" class="boton" onclick="goToSlide(4)"></button>
+              <button id="anime-button-5" class="boton" onclick="goToSlide(5)"></button>
+          </article>
+        </aside>
+      </article>
+
+        
+    </section>
+    <section class="seccion-manga">
+      <h1 class="manga">Manga</h1>
+      <article class="frame-manga">
+        <aside class="carrousel-manga">
+          <img class="imagen-manga" src="img/manga/carrousel/ushiro.png"/>
+          <img class="ocultacion" src="img/manga/carrousel/Zenbu.jpg"/>
+          <img class="ocultacion" src="img/manga/carrousel/existence.jpg"/>
+          <img class="ocultacion" src="img/manga/carrousel/morning.jpg"/>
+          <img class="ocultacion" src="img/manga/carrousel/shanai.png"/>
+          <img class="ocultacion" src="img/manga/carrousel/amasaya.jpg"/>
+        </aside>
+        <article class="textos">
+          <article class="titulos-manga">
+            <p class="titulo-manga">Ushiro no Seki no Gyaru ni Sukarete Shimatta. - Mou Ore wa Damekamoshirenai</p>
+            <p class="ocultacion">Zenbu Osake no Sei ni Shite</p>
+            <p class="ocultacion">She Has Become a Distant Existence</p>
+            <p class="ocultacion">They Are Still Being Shaken This Morning.</p>
+            <p class="ocultacion">E, Shanai System Subete Wanope shiteiru Watashi wo Kaiko desu ka?</p>
+            <p class="ocultacion">Amasaya</p>
+          </article>
+          <article class="descs-manga">
+            <p class="desc-manga">
+              ¿Mi vida escolar ha cambiado drásticamente solo porque le gusto y apenas hablo?<br />Yuizaki Shino, una
+              de las chicas más bellas de la escuela, es compañera de clase de Fujiwara Sandai sentada detrás de él.
+              Fue sólo por capricho que Sandai la ayudó a pesar de pasar sus días estudiando y no tener un solo amigo.
+              Se supone que iba a ser-<br />&#34;¡No podía esperar a que saliera de la escuela!... Oye, ¿espera un
+              minuto?&#34;<br />Ese día y momento llevaron a Sandai a empezar a salir con Shino. Pasan tiempo juntos
+              después de la escuela, se mantienen al día con los pasatiempos del otro y se quedan a dormir con
+              frecuencia... Ella es amable y dulce y siempre se aferra a él. Y de alguna manera, los otros compañeros
+              de clase comenzaron a prestarle atención a Sandai, poco a poco cambiaron su estilo de apariencia y hubo
+              muchas conversaciones alrededor de su cinturón. Está más inquieto que cuando Sandai estaba solo antes.
+              ....Bueno, este tipo de vida escolar no es tan mala, ¿verdad?
+            </p>
+            <p class="ocultacion">
+              Yo, que me reuní con mi ex compañero de clase Hajime Aosaki en un pub, me convertí en compañero de bebida 
+              con ella. Mientras la cuidaba, que es una mala borracha, ¡¿hoy se desarrolló una situación inesperada...?!
+            </p>
+            <p class="ocultacion">
+              Una vez ella fue su amiga de la infancia y solía salir con él todo el tiempo. Ahora ella es una ídolo 
+              televisiva reconocida a nivel nacional y todavía sale con él todo el tiempo. ¡Una existencia tan lejana, 
+              está en otra realidad!
+            </p>
+            <p class="ocultacion">
+              Esta es la típica historia de un chico que está enamorado en secreto de una chica, ambos comparten un viaje
+               de 20 minutos en el tren de cercanías camino a diferentes colegios, ¿podrá el chico acercarse a la chica y 
+               confesarle su amor? Y además... Lo que él no sabe: ¡Hay otros 3 pasajeros que secretamente apoyan el amor 
+               secreto del chico hacia la chica! Lea ahora las travesuras que se producen cuando el niño intenta acercarse 
+               a la niña; del creador de "Jitsu Wa Watashi Wa" y "Yumemi Ga Oka Wonderland".
+            </p>
+            <p class="ocultacion">
+              Satou Ai, que ha estado manejando el sistema interno de la compañía como un solo hombre, recibió una notificación 
+              de despido por un cambio de presidente. Después del despido, Ai quedó sola en profunda tristeza hasta que se topó 
+              con Suzuki Kenta. Kenta la invita a unirse a su nueva empresa. La empresa fue algo a lo que comenzó a acercarse a 
+              otros con el nombre de "Escuela intensiva para verdaderos programadores". Con las conferencias poco convencionales, 
+              atrevidas y a veces salvajes de Ai, el estudiante comenzó a esperar con ansias las lecciones.
+            </p>
+            <p class="ocultacion">
+              La genial Amamiya Aoi, de cabello negro, y la gyaru Shiina Saya, de cabello rubio.
+            </p>
+          </article>
+          <article class="bottom">
+            <article class="autores-manga">
+              <p class="autor">Michinoku Koharu, Suya Maromi</p>
+              <p class="ocultacion">Nikumaru</p>
+              <p class="ocultacion">Kiyu Fuyuki</p>
+              <p class="ocultacion">Masuda Eiji</p>
+              <p class="ocultacion">Io (伊於), Kashirome Yuki</p>
+              <p class="ocultacion">すとろべりぃ</p>
+            </article>
+            <article class="botones-manga">
+              <button class="boton-pink"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+            </article>
+          </article>
+        </article>
+      </article>
+    </section>
+    <section class="seccion-new-manga">
+      <h2 class="new-title">New Manga Titles</h2>
+      <section id="flecha_izq" class="flecha-izquierda arrow">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+      </section>
+      <ul class="frame-new-manga">
+        
+        <li class="cards">
+          <img class="img-new-title" src="img/manga/new titles/spyxfamily.png"/>
+          <p class="text-new-title">SPY x FAMILY</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/manga/new titles/frieren-manga.png"/>
+          <p class="text-new-title">Sousou No Frieren</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/manga/new titles/jujus-manga.png"/>
+          <p class="text-new-title">Jujutsu Kaisen</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/manga/new titles/ruirui-manga.png"/>
+          <p class="text-new-title">Ruirui Senki</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/manga/new titles/apothecary.png"/>
+          <p class="text-new-title">The Apothecary Diaries</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/manga/new titles/last-tour-manga.png"/>
+          <p class="text-new-title">Girls’ Last Tour</p>
+        </li>
+        
+      </ul>
+      <section id="flecha-der" class="flecha-derecha arrow">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </section>
+    </section>
+    <footer class="footer">
+      <article class="foo-contenedor">
+        <aside class="footer-filas">
+          <article class="footer-colum">
+            <h4>About Us</h4>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat fringilla accumsan. 
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+            </p>
+          </article>
+          <article class="footer-colum">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </article>
+          <article class="footer-colum">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Anime</a></li>
+              <li><a href="#">Manga</a></li>
+            </ul>
+          </article>
+          <article class="footer-colum">
+            <h4>Follow Us</h4>
+            <aside class="redes-sociales">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </aside>
+          </article>
+          <article class="copyright">
+            <p class="footer-text">
+              Copyright © Tokyo Archive All Rights Reserved.
+            </p>
+            <p class="footer-text">
+              Powered by DAW.
+            </p>
+          </article>
+        </aside>
+      </article>
+   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
