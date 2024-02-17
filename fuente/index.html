@@ -2,12 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    
     <link rel="stylesheet" href="estilos/globals.css" />
     <link rel="stylesheet" href="estilos/style.css" />
-    <script src="js/script.js" defer></script>
+
     <script src="js/cards.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/carrousel-movil.js" defer></script>
+    <script src="js/carrousel-anime.js" defer></script>
+    <script src="js/carrousel-manga.js" defer></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
 
@@ -107,37 +111,37 @@
     <section class="section-anime-pc">
       <article class="contenedor-carrousel">
         <article class="carrousel">
-          <aside id="img0" class="carrousel-slide">
+          <aside class="carrousel-slide">
             <picture> 
               <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/tate.jpg">-->
               <img src="img/anime/pc-tablet/tate-recort.jpg">
             </picture>
           </aside>
-          <aside id="img1" class="carrousel-slide ocultacion">
+          <aside class="ocultacion">
             <picture> 
               <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/elite.jpg">-->
               <img src="img/anime/pc-tablet/elite-recort.jpg">
             </picture>
           </aside>
-          <aside id="img2" class="carrousel-slide ocultacion">
+          <aside class="ocultacion">
             <picture> 
               <!-- <source type="image/jpg" media="(max-width: 1854px)" srcset="img/jujus.jpg">-->
               <img src="img/anime/pc-tablet/jujus-recort.jpg">
             </picture>
           </aside>
-          <aside id="img3" class="carrousel-slide ocultacion">
+          <aside class="ocultacion">
             <picture> 
               <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/momochi.jpg">-->
               <img src="img/anime/pc-tablet/momochi-recort.jpg">
             </picture>
           </aside>
-          <aside id="img4" class="carrousel-slide ocultacion">
+          <aside class="ocultacion">
             <picture> 
               <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/tales.jpg">-->
               <img src="img/anime/pc-tablet/tales-recort.jpg">
             </picture>
           </aside>
-          <aside id="img5" class="carrousel-slide ocultacion">
+          <aside class="ocultacion">
             <picture> 
               <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/solo.jpg">-->
               <img src="img/anime/pc-tablet/solo-recort.jpg">
@@ -149,32 +153,32 @@
         <h1 class="titulo-anime">Anime</h1>
         <aside class="frame">
           <article class="carrousel-titulo">
-            <article id="titu0" class="center">
+            <article class="titulo">
               <img src="img/anime/titulos/tate-titulo.png">
             </article>
-            <article id="titu1" class="ocultacion">
+            <article class="ocultacion">
               <img src="img/anime/titulos/elite-titulo.png">
             </article>
-            <article id="titu2" class="ocultacion">
+            <article class="ocultacion">
               <img src="img/anime/titulos/jujus-titulo.png">
             </article>
-            <article id="titu3" class="ocultacion">
+            <article class="ocultacion">
               <img src="img/anime/titulos/momochi-titulo.png">
             </article>
-            <article id="titu4" class="ocultacion">
+            <article class="ocultacion">
               <img src="img/anime/titulos/tales-titulo.png">
             </article>
-            <article id="titu5" class="ocultacion">
+            <article class="ocultacion">
               <img src="img/anime/titulos/solo-titulo.png">
             </article>
           </article>
           <article class="descripciones">
-            <p id="desc0" class="description">
+            <p class="description">
               Iwatani Naofumi es el típico otaku, al menos hasta que un día encuentra en la biblioteca un libro que lo
               transporta a otro mundo. Allí se convertirá en el Héroe del Escudo, uno de los Cuatro Héroes Cardinales, y
               tendrá que luchar contra las Olas de la Catástrofe junto a los otros héroes...
             </p>
-            <p id="desc1" class="ocultacion">
+            <p class="ocultacion">
               Kiyotaka Ayanokouji acaba de entrar en la Academia Tokyo Koudo Ikusei, de la 
               cual se dice que el 100% de sus estudiantes acaban yendo a la 
               universidad o encontrando un buen trabajo. Sin embargo nuestro 
@@ -184,7 +188,7 @@
               sistema por el cual se puede hablar, dormir e incluso molestar a los 
               compañeros durante las clases.
             </p>
-            <p id="desc2" class="ocultacion">
+            <p class="ocultacion">
               Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de los humanos 
               se convierten en Maldiciones que nos acechan en nuestra vida diaria. Las
               Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a 
@@ -192,7 +196,7 @@
               muerte. Y lo que es peor: solo una Maldición puede exorcizar otra 
               Maldición.
             </p>
-            <p id="desc3" class="ocultacion">
+            <p class="ocultacion">
               El decimosexto cumpleaños de Himari será inolvidable para ella. 
               Inesperadamente, recibe un testamento donde le dejan en herencia
               una misteriosa casa: la Casa Momochi. Al llegar allí descubre que dicha 
@@ -200,7 +204,7 @@
               humano y el reino espiritual. Allí conoce a Yukari, Ise y un peculiar 
               chico llamado Aoi que parece esconder un secreto.
             </p>
-            <p id="desc4" class="ocultacion">
+            <p class="ocultacion">
               Sato es un chico de secundaria enamorado de su mejor amiga, Hime, una chica 
               preciosa que procede de otro mundo. Cuando ella regresa a su mundo natal
               para casarse, no se lo piensa dos veces: la sigue y echa por tierra la 
@@ -209,7 +213,7 @@
               esposo está destinado a ser el Rey del Anillo, un héroe con un poder 
               inmenso.
             </p>
-            <p id="desc5" class="ocultacion">
+            <p class="ocultacion">
               Lo que no te mata te hace más fuerte, pero en el caso de Sung Jinwoo, lo que lo mató lo hizo más fuerte. 
               Después de ser brutalmente asesinado por monstruos en una mazmorra de alto rango, Jinwoo regresó con el Sistema, 
               un programa que solo él puede ver y que eleva su nivel en todos los sentidos.
@@ -220,12 +224,12 @@
             <button class="texto-comenzar">COMENZAR A VER</button>
           </article>
           <article class="botones">
-              <button id="anime-button-0" class="boton-pink" onclick="goToSlide(0)"></button>
-              <button id="anime-button-1" class="boton" onclick="goToSlide(1)"></button>
-              <button id="anime-button-2" class="boton" onclick="goToSlide(2)"></button>
-              <button id="anime-button-3" class="boton" onclick="goToSlide(3)"></button>
-              <button id="anime-button-4" class="boton" onclick="goToSlide(4)"></button>
-              <button id="anime-button-5" class="boton" onclick="goToSlide(5)"></button>
+              <button class="boton-pink"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
           </article>
         </aside>
       </article>

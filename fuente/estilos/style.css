@@ -320,7 +320,7 @@ input::placeholder {
   width: 55%;
 }
 
-.center{
+.titulo{
   display: flex;
   justify-content: center;
   padding-top: 4%;
