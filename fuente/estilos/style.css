@@ -256,7 +256,7 @@ input::placeholder {
 
 .contenedor-anime {
   width: 100%;
-  margin-bottom: 82%;
+  margin-bottom: 78%;
 }
 
 .frame-movil {
@@ -317,7 +317,7 @@ input::placeholder {
   color: #ececece6;
   font-size: 58px;
   letter-spacing: -0.5px;
-  line-height: 35px;
+  line-height: 50px;
 }
 
 .frame {
@@ -446,7 +446,7 @@ input::placeholder {
   color: #3b3b3b;
   font-size: 58px;
   letter-spacing: -0.5px;
-  line-height: 40px;
+  line-height: 24px;
 }
 
 .frame-manga {
@@ -540,7 +540,7 @@ input::placeholder {
   color: #3b3b3b;
   font-size: 50px;
   letter-spacing: -0.5px;
-  line-height: 36px;
+  line-height: 58px;
 }
 
 .frame-new-manga {
@@ -726,21 +726,20 @@ input::placeholder {
 
 @media screen and (max-width: 1250px) {
   .new-title {
-    font-size: 40px;
-    line-height: 28px;
-    margin-left: 8%;
+    font-size: 34px;
+    line-height: 44px;
+    margin-left: 6%;
   }
 
   .titulo-anime {
     font-size: 40px;
-    line-height: 28px;
-    margin-left: 8.5%;
+    line-height: 36px;
+    margin-left: 6.5%;
   }
 
   .manga {
     font-size: 40px;
-    line-height: 28px;
-    margin-left: 8%;
+    margin-left: 6%;
   }
 
   .titulo-manga {
@@ -820,21 +819,20 @@ input::placeholder {
 
 @media screen and (max-width: 765px) {
   .new-title {
-    font-size: 34px;
-    line-height: 24px;
-    margin-left: 9%;
+    font-size: 28px;
+    line-height: 40px;
+    margin-left: 6%;
   }
 
   .titulo-anime {
     font-size: 34px;
-    line-height: 24px;
-    margin-left: 11%;
+    line-height: 36px;
+    margin-left: 7%;
   }
 
   .manga {
     font-size: 34px;
-    line-height: 24px;
-    margin-left: 9%;
+    margin-left: 6%;
   }
 
   .titulo-manga {
@@ -922,7 +920,7 @@ input::placeholder {
 
 @media screen and (max-width: 435px) {
   .contenedor-anime {
-    margin-bottom: 78%;
+    margin-bottom: 74%;
   }
 }
 
@@ -951,12 +949,6 @@ input::placeholder {
 
   .text-new-title {
     font-size: 10px
-  }
-}
-
-@media screen and (max-width: 290px) {
-  .contenedor-anime {
-    margin-bottom: 90%;
   }
 }
 
