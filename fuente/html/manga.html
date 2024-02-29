@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <link rel="stylesheet" href="../estilos/principal.scss" />
+
+    <script src="../js/inicio.js" defer></script>
+    <script src="../js/cards.js" defer></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/carrousel-manga.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+
+  <body>
+    <header class="header">
+        <img id="logo" class="logotype" src="../img/header/logotype.png" />
+        <nav class="botones-nav">
+          <a href="#" class="header-button-active text">Manga</a>
+          <a href="#" class="header-button text">Anime</a>
+        </nav>
+        <aside class="user-functions">
+          <nav class="search-bar">
+            <img class="lupa" src="../img/header/lupa.png"/>
+            <input class="buscador" type="text" placeholder="Search...">
+          </nav>
+          <a href="#" class="login-button text">Login</a>
+          <a href="#" class="sign-up-button text">Sign Up</a>
+          <button id="menu" class="menu"><i class="bi bi-list-task"></i></button>
+        </aside>      
+    </header>
+    <nav id="menu_desplegable" class="menu-desplegable">
+      <ul>
+        <li><a href="#" class="botones-menu text-nav">Manga</a></li>
+        <li><a class="botones-menu text-nav">Anime</a></li>
+        <li><a class="botones-menu text-nav">Login</a></li>
+        <li><a class="botones-menu text-nav">Sign Up</a></li>
+      </ul>
+    </nav>
+    
+    <section class="seccion-manga">
+      <h1 class="new-title">Recommended Titles</h1>
+      <article class="frame-manga">
+        <aside class="carrousel-manga">
+          <img class="imagen-manga" src="../img/manga/carrousel/ushiro.png"/>
+          <img class="ocultacion" src="../img/manga/carrousel/Zenbu.jpg"/>
+          <img class="ocultacion" src="../img/manga/carrousel/existence.jpg"/>
+          <img class="ocultacion" src="../img/manga/carrousel/morning.jpg"/>
+          <img class="ocultacion" src="../img/manga/carrousel/shanai.png"/>
+          <img class="ocultacion" src="../img/manga/carrousel/amasaya.jpg"/>
+        </aside>
+        <aside class="textos">
+          <div class="titulos-manga">
+            <p class="titulo-manga">Ushiro no Seki no Gyaru ni Sukarete Shimatta</p>
+            <p class="ocultacion">Zenbu Osake no Sei ni Shite</p>
+            <p class="ocultacion">She Has Become a Distant Existence</p>
+            <p class="ocultacion">They Are Still Being Shaken This Morning.</p>
+            <p class="ocultacion">Shanai System Subete Wanope shiteiru desu ka?</p>
+            <p class="ocultacion">Amasaya</p>
+          </div>
+          <div class="descs-manga">
+            <p class="desc-manga">
+              ¿Mi vida escolar ha cambiado drásticamente solo porque le gusto y apenas hablo?<br />Yuizaki Shino, una
+              de las chicas más bellas de la escuela...
+            </p>
+            <p class="ocultacion">
+              Yo, que me reuní con mi ex compañero de clase Hajime Aosaki en un pub, me convertí en compañero de bebida 
+              con ella. Mientras la cuidaba, que es una mala borracha, ¡¿hoy se desarrolló una situación inesperada...?!
+            </p>
+            <p class="ocultacion">
+              Una vez ella fue su amiga de la infancia y solía salir con él todo el tiempo. Ahora ella es una ídolo 
+              televisiva reconocida a nivel nacional y todavía sale con él todo el tiempo. ¡Una existencia tan lejana, 
+              está en otra realidad!
+            </p>
+            <p class="ocultacion">
+              Esta es la típica historia de un chico que está enamorado en secreto de una chica, ambos comparten un viaje
+               de 20 minutos en el tren de cercanías camino a diferentes colegios, ¿podrá el chico acercarse a la chica y 
+               confesarle su amor? Y además...  
+            </p>
+            <p class="ocultacion">
+              Satou Ai, que ha estado manejando el sistema interno de la compañía como un solo hombre, recibió una notificación 
+              de despido por un cambio de presidente. Después del despido, Ai quedó sola en profunda tristeza...
+            </p>
+            <p class="ocultacion">
+              La genial Amamiya Aoi, de cabello negro, y la gyaru Shiina Saya, de cabello rubio.
+            </p>
+          </div>
+          <div class="bottom">
+            <div class="autores-manga">
+              <p class="autor">Michinoku Koharu, Suya Maromi</p>
+              <p class="ocultacion">Nikumaru</p>
+              <p class="ocultacion">Kiyu Fuyuki</p>
+              <p class="ocultacion">Masuda Eiji</p>
+              <p class="ocultacion">Io (伊於), Kashirome Yuki</p>
+              <p class="ocultacion">すとろべりぃ</p>
+            </div>
+            <div class="botones-manga">
+              <button class="boton-pink"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+              <button class="boton"></button>
+            </div>
+          </div>
+        </aside>
+      </article>
+    </section>
+
+    <section class="section-updates">
+      <h1 class="new-title">Last Updates</h1>
+      <article class="frame-updates">
+        
+        <div class="cont-manga">
+          <img src="../img/manga/updates/fare-new.jpg" class="img-manga-update">
+          <div class="texts-update">
+            <p class="title-update">Savory Fare</p>
+            <p class="chapter-update">Vol. 1 - Ch. 15</p>
+            <p class="author-update">A. And T.</p>
+          </div>
+        </div>
+        <div class="cont-manga">
+          <img src="../img/manga/updates/boy-new.jpg" class="img-manga-update">
+          <div class="texts-update">
+            <p class="title-update">Sensitive Boy</p>
+            <p class="chapter-update">Ch. 44</p>
+            <p class="author-update">46</p>
+          </div>
+        </div>
+        <div class="cont-manga">
+          <img src="../img/manga/updates/lady.jpg" class="img-manga-update">
+          <div class="texts-update">
+            <p class="title-update">Patience, My Lady!</p>
+            <p class="chapter-update">Ch. 66</p>
+            <p class="author-update">daybook</p>
+          </div>
+        </div>
+        <div class="cont-manga">
+          <img src="../img/manga/updates/shojo-new.jpg" class="img-manga-update">
+          <div class="texts-update">
+            <p class="title-update">Shojo Null</p>
+            <p class="chapter-update">Ch. 17</p>
+            <p class="author-update">Nakanishi Kanae</p>
+          </div>
+        </div>
+        <div class="cont-manga">
+          <img src="../img/manga/updates/witch.jpg" class="img-manga-update">
+          <div class="texts-update">
+            <p class="title-update">Witches' Quarter</p>
+            <p class="chapter-update">Ch. 5</p>
+            <p class="author-update">Brale Studios</p>
+          </div>
+        </div>
+        <div class="cont-manga">
+          <img src="../img/manga/updates/nora-new.jpg" class="img-manga-update">
+          <div class="texts-update">
+            <p class="title-update">Nora</p>
+            <p class="chapter-update">Oneshot</p>
+            <p class="author-update">Fuyuko Nakamura</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="seccion-new-manga">
+      <h2 class="new-title">New Manga Titles</h2>
+      <section id="flecha_izq" class="flecha-izquierda arrow">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+      </section>
+      <ul class="frame-new-manga">
+        
+        <li class="cards">
+          <img class="img-new-title" src="../img/manga/new titles/spyxfamily.png"/>
+          <p class="text-new-title">SPY x FAMILY</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="../img/manga/new titles/frieren-manga.png"/>
+          <p class="text-new-title">Sousou No Frieren</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="../img/manga/new titles/jujus-manga.png"/>
+          <p class="text-new-title">Jujutsu Kaisen</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="../img/manga/new titles/ruirui-manga.png"/>
+          <p class="text-new-title">Ruirui Senki</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="../img/manga/new titles/apothecary.png"/>
+          <p class="text-new-title">The Apothecary Diaries</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="../img/manga/new titles/last-tour-manga.png"/>
+          <p class="text-new-title">Girls’ Last Tour</p>
+        </li>
+        
+      </ul>
+      <section id="flecha-der" class="flecha-derecha arrow">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </section>
+    </section>
+    <footer class="footer">
+      <article class="foo-contenedor">
+        <aside class="footer-filas">
+          <div class="footer-colum">
+            <h4>About Us</h4>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat fringilla accumsan. 
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+            </p>
+          </div>
+          <div class="footer-colum">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-colum">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Anime</a></li>
+              <li><a href="#">Manga</a></li>
+            </ul>
+          </div>
+          <div class="footer-colum">
+            <h4>Follow Us</h4>
+            <div class="redes-sociales">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="footer-text">
+              Copyright © Tokyo Archive All Rights Reserved.
+            </p>
+            <p class="footer-text">
+              Powered by DAW.
+            </p>
+          </div>
+        </aside>
+      </article>
+   </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

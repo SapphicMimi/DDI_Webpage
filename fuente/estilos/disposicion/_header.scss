@@ -21,13 +21,33 @@
     }
 }
 
+.header-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-button-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .login-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @include mixinMediaQueryWidth(mqW6) {
         display: none;
     }
 }
 
 .sign-up-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @include mixinMediaQueryWidth(mqW6) {
         display: none;
     }

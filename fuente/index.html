@@ -5,6 +5,7 @@
     
     <link rel="stylesheet" href="estilos/principal.scss" />
 
+    <script src="js/inicio.js" defer></script>
     <script src="js/cards.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/carrousel-movil.js" defer></script>
@@ -16,24 +17,24 @@
 
   <body>
     <header class="header">
-        <img class="logotype" src="img/header/logotype.png" />
+        <img id="logoInicio" class="logotype" src="img/header/logotype.png" />
         <nav class="botones-nav">
-          <button class="header-button text">Manga</button>
-          <button class="header-button text">Anime</button>
+          <a href="html/manga.html" class="header-button text">Manga</a>
+          <a href="#" class="header-button text">Anime</a>
         </nav>
         <aside class="user-functions">
           <nav class="search-bar">
             <img class="lupa" src="img/header/lupa.png"/>
             <input class="buscador" type="text" placeholder="Search...">
           </nav>
-          <button class="login-button text">Login</button>
-          <button class="sign-up-button text">Sign Up</button>
+          <a href="#" class="login-button text">Login</a>
+          <a href="#" class="sign-up-button text">Sign Up</a>
           <button id="menu" class="menu"><i class="bi bi-list-task"></i></button>
         </aside>      
     </header>
     <nav id="menu_desplegable" class="menu-desplegable">
       <ul>
-        <li><a class="botones-menu text-nav">Manga</a></li>
+        <li><a href="html/manga.html" class="botones-menu text-nav">Manga</a></li>
         <li><a class="botones-menu text-nav">Anime</a></li>
         <li><a class="botones-menu text-nav">Login</a></li>
         <li><a class="botones-menu text-nav">Sign Up</a></li>
