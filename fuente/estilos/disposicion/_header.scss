@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+}
+
+.buscador {
+    @include mixinMediaQueryWidth(mqW3) {
+        display: none;
+    }
+}
+
+.botones-nav {
+    display: flex;
+
+    @include mixinMediaQueryWidth(mqW6) {
+        display: none;
+    }
+}
+
+.login-button {
+    @include mixinMediaQueryWidth(mqW6) {
+        display: none;
+    }
+}
+
+.sign-up-button {
+    @include mixinMediaQueryWidth(mqW6) {
+        display: none;
+    }
+}
+
+.user-functions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+

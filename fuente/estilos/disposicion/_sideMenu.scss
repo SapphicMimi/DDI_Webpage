@@ -1,0 +1,19 @@
+.text-nav {
+    text-align: right;
+}
+
+.menu {
+    display: none;
+
+    @include mixinMediaQueryWidth(mqW6) {
+        display: block;
+    }
+}
+
+.mostrar-menu {
+    display: block;
+}
+
+.botones-menu {
+    display: block;
+}

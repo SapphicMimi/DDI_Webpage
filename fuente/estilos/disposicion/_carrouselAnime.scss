@@ -1,0 +1,65 @@
+.section-anime-pc {
+    display: flex; 
+    flex-direction: column;
+
+    @include mixinMediaQueryWidth(mqW12) {
+        display: none;
+    }
+}
+
+.carrousel {
+    display: flex;
+}
+
+.carrousel-slide {
+    display: flex;
+}
+
+.anime {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrousel-titulo {
+    display: flex;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.descripciones {
+    display: flex;
+    justify-content: center;
+}
+
+.description  {
+    text-align: center;
+
+    @include mixinMediaQueryWidth(mqW1) {
+        display: none;
+    }
+}
+
+.caja-comenzar {
+    display: flex;
+    justify-content: center;
+}
+
+.img-play {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.botones {
+    justify-self: start;
+    align-items: end;
+}

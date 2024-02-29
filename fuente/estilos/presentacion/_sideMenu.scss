@@ -1,0 +1,64 @@
+.text-nav {
+    font-family: $Lato;
+    font-weight: 900;
+    font-size: 16px;
+  
+    color: $white;
+    line-height: 3.5;
+}
+  
+.menu {
+    border: solid 3px $pink;
+    border-radius: 4px;
+  
+    width: 58px;
+    height: 44px;
+    margin-right: 6%;
+  
+    color: $white;
+    background-color: $grey_2;
+    
+    i {
+        font-size: 26px;
+    }
+}
+  
+.menu-desplegable {
+    position: absolute;
+    z-index: 10;
+    width: 30%;
+    right: 0;
+  
+    background-color: $grey_2;
+  
+    transition: .4s ease;
+    transform: translateX(100%);
+
+    a:hover {
+        transform: translateX(-10%);
+    }
+
+    li {
+        width: 100%;
+    
+        border-bottom: 1px solid #eccacb;
+    }
+
+    @include mixinMediaQueryWidth(mqW10) {
+        width: 45%;
+    }
+}
+  
+.botones-menu { 
+    border: solid 0px black;
+    background-color: var(--main-color);
+    color: $white;
+  
+    padding-right: 10%;
+  
+    transition: .4s ease;
+}
+  
+.aparecer {
+    transform: translateX(0);
+}

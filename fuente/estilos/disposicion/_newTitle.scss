@@ -1,0 +1,27 @@
+.seccion-new-manga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-title {
+    align-self: flex-start;
+}
+
+.frame-new-manga {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/4) - 30px);
+
+    @include mixinMediaQueryWidth(mqW8) {
+        grid-auto-columns: calc((100%/3) - 30px);
+    }
+
+    @include mixinMediaQueryWidth(mqW14) {
+        grid-auto-columns: calc((100%/2) - 30px);
+    }
+}
+
+.text-new-title {
+    text-align: center;
+}

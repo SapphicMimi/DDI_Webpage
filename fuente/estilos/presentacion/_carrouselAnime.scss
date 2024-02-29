@@ -1,0 +1,139 @@
+.contenedor-carrousel {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+}
+  
+.carrousel {
+    max-height: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+  
+.carrousel-slide {
+    width: 100%;
+}
+  
+.anime {
+    width: 90%;
+    position: absolute;
+    z-index: 0;
+}
+  
+.titulo-anime {
+    margin-top: 3.334%;
+    margin-left: 5.556%;
+  
+    font-family: $Arvo;
+    font-weight: 400;
+    font-size: 58px;
+
+    color: $grey_3;
+
+    letter-spacing: -0.5px;
+    line-height: 50px;
+
+    @include mixinMediaQueryWidth(mqW2) {
+        font-size: 40px;
+        line-height: 36px;
+        margin-left: 6.5%;
+    }
+
+    @include mixinMediaQueryWidth(mqW9) {
+        font-size: 34px;
+        line-height: 36px;
+        margin-left: 7%;
+    }
+}
+  
+.frame {
+    width: 50%;
+    border-radius: 39px;
+    background: linear-gradient(180deg, rgb(236, 236, 236) 50%, rgba(236, 236, 236, 0) 100%);
+    margin-left: 3%;
+
+    @include mixinMediaQueryWidth(mqW9) {
+        border-radius: 20px;
+    }
+}
+  
+.carrousel-titulo {
+    width: auto;
+
+    img {
+        width: 55%;
+    }
+}
+  
+.titulo {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+  
+    flex-shrink: 0;
+}
+  
+.descripciones {
+    width: 84%;
+    padding-bottom: 2%;
+}
+  
+.description  {
+    font-family: $Lato;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: $grey_2;
+
+    letter-spacing: -0.16px;
+    line-height: 25.6px;
+}
+  
+.caja-comenzar {
+    width: 90%;
+    height: 4%;
+
+    background-color: $pink;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+  
+.texto-comenzar {
+    font-family: $Lato;
+    font-weight: 700;
+    font-size: 16px;
+
+    color: $black;
+    white-space: nowrap;
+
+    letter-spacing: -0.16px;
+    line-height: 25.6px;
+    
+    background-color: $pink;
+    border: solid 0px;
+  
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    @include mixinMediaQueryWidth(mqW12) {
+        font-size: 12px;
+    }
+}
+
+.img-play {
+    @include mixinMediaQueryWidth(mqW12) {
+        width: 7%;
+    }
+}
+  
+.botones {
+    width: 85%;
+
+    margin-top: 2%;
+    margin-bottom: 5%;
+}

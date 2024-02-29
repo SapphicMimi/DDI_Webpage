@@ -1,0 +1,34 @@
+.seccion-manga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manga {
+    align-self: flex-start;
+}
+
+.frame-manga {
+    display: flex;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.botones-manga {
+    display: flex;
+}
+
+.desc-manga {
+    @include mixinMediaQueryWidth(mqW9) {
+        display: none;
+    }
+}

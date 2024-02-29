@@ -9,17 +9,13 @@ body {
 }
 
 .text {
-  height: 21px;
-  top: 8px;
   font-family: "Lato", Helvetica;
   font-weight: 900;
-  color: #fcfafa;
   font-size: 16px;
+
   text-align: center;
-  letter-spacing: 0;
-  line-height: 20.8px;
-  white-space: nowrap;
-  left: 32px;
+
+  color: #fcfafa;
 }
 
 .header {
@@ -41,24 +37,20 @@ body {
   display: flex;
 }
 
-.manga-button {
-  border: solid 0px black;
+.header-button {
   width: 155px;
   height: 34px;
   margin-left: 12%;
   
   background-color: #3b3b3b;
   border-radius: 8px;
+  border: solid 0px black;
+
+  transition:.4s ease;
 }
 
-.anime-button {
-  border: solid 0px black;
-  width: 145px;
-  height: 34px;
-  margin-left: 12%;
-
-  background-color: #3b3b3b;
-  border-radius: 8px;
+.header-button:hover {
+  background-color: #eccacb;
 }
 
 .user-functions {
@@ -80,15 +72,13 @@ body {
 }
 
 .buscador {
-  border: solid 0px;
   font-family: "Lato", Helvetica;
   font-weight: 900;
-  color: #3b3b3b;
   font-size: 14px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20.8px;
-  padding: 4px 4px 4px px;
+
+  color: #3b3b3b;
+
+  border: solid 0px;
 }
 
 input::placeholder {
@@ -810,14 +800,12 @@ input::placeholder {
   }
 }
 
-@media(max-width: 767px){
+@media screen and (max-width: 765px) {
   .footer-colum {
     width: 50%;
     margin-bottom: 30px;
   }
-}
 
-@media screen and (max-width: 765px) {
   .new-title {
     font-size: 28px;
     line-height: 40px;

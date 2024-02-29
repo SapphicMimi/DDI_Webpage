@@ -1,0 +1,17 @@
+.footer-filas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes-sociales {
+    a{
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

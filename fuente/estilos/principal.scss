@@ -1,0 +1,24 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:900,400,700,600|Arvo:400,700");
+
+@import "../estilos/variables";
+@import "../estilos/global";
+@import "../estilos/mixins";
+
+@import "../estilos/disposicion/carrouselAnime";
+@import "../estilos/disposicion/carrouselAnimeMovil";
+@import "../estilos/disposicion/footer";
+@import "../estilos/disposicion/header";
+@import "../estilos/disposicion/newTitle";
+@import "../estilos/disposicion/ocultar";
+@import "../estilos/disposicion/recommendManga";
+@import "../estilos/disposicion/sideMenu";
+
+@import "../estilos/presentacion/botones";
+@import "../estilos/presentacion/carrouselAnime";
+@import "../estilos/presentacion/carrouselAnimeMovil";
+@import "../estilos/presentacion/footer";
+@import "../estilos/presentacion/header";
+@import "../estilos/presentacion/newTitle";
+@import "../estilos/presentacion/recommendManga";
+@import "../estilos/presentacion/sideMenu";
