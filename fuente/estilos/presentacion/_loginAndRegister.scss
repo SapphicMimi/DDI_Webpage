@@ -1,0 +1,202 @@
+.background-lr {
+    margin-bottom: -4%;
+}
+
+.img-lr {
+    width: 100%;
+
+    // Otra vez, si no pongo la media query aquí, no me va...
+    @include mixinMediaQueryWidth(mqW3) {
+        display: none;
+    }
+}
+
+.img2-lr {
+    width: 100%;
+}
+
+.img-movil-lr {
+    width: 100%;
+}
+
+.img-movil2-lr {
+    width: 100%;
+}
+
+.section-lr {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    @include mixinMediaQueryWidth(mqW11) {
+        position: relative;
+    }
+}
+
+.frame-lr {
+    margin-top: 1.5%;
+
+    width: 30%;
+
+    border-radius: 18px;
+    background-color: $grey_2;
+
+    transition:.4s ease;
+
+    @include mixinMediaQueryWidth(mqW18) {
+        margin-top: 0.5%;
+        width: 34%;
+    }
+
+    @include mixinMediaQueryWidth(mqW3) {
+        margin-top: 2%;
+        width: 40%;
+    }
+
+    @include mixinMediaQueryWidth(mqW6) {
+        margin-top: 14%;
+        width: 80%;
+    }
+
+    @include mixinMediaQueryWidth(mqW8) {
+        width: 85%;
+    }
+
+    @include mixinMediaQueryWidth(mqW10) {
+        margin-top: 7%;
+        width: 90%;
+    }
+
+    @include mixinMediaQueryWidth(mqW11) {
+        width: 100%;
+        background-color: $white;
+    }
+}
+
+.title-lr {
+    margin-top: 6%;
+    margin-bottom: 5%;
+
+    font-family: $Arvo;
+    font-weight: 700;
+    font-size: 38px;
+
+    color: $white;
+    border-bottom: 3px solid $white;
+
+    @include mixinMediaQueryWidth(mqW3) {
+        font-size: 28px;
+    }
+
+    @include mixinMediaQueryWidth(mqW11) {
+        color: $grey_2;
+        border-bottom: 3px solid $grey_2;
+    }
+}
+
+.text-lr {
+    margin-top: 4%;
+    margin-left: 6%;
+
+    font-family: $Lato;
+    font-size: 18px;
+
+    color: $white;
+
+    @include mixinMediaQueryWidth(mqW3) {
+        font-size: 16px;
+    }
+
+    @include mixinMediaQueryWidth(mqW11) {
+        color: $grey_2;
+    }
+}
+
+.input-lr {
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    padding: 2%;
+
+    border: 0px solid;
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    transition:.4s ease;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    @include mixinMediaQueryWidth(mqW11) {
+        color: $grey_2;
+        border-bottom: 3px solid $grey_2;
+
+        box-shadow: 6px 6px 10px 0px $grey_2;
+    }
+}
+
+.submit-lr {
+    margin-top: 20%;
+
+    @include mixinMediaQueryWidth(mqW18) {
+        margin-top: 8%;
+    }
+
+    @include mixinMediaQueryWidth(mqW3) {
+        margin-top: 15%;
+    }
+}
+
+.button-lr {
+    width: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    font-size: 20px;
+    font-family: $Lato;
+    font-weight: 700;
+
+    color: $white;
+
+    border: 0px solid;
+    border-radius: 40px;
+    background-color: $pink;
+
+    transition:.4s ease;
+
+    &:hover {
+        width: 40%;
+    }
+
+    @include mixinMediaQueryWidth(mqW3) {
+        font-size: 18px;
+    }
+
+    @include mixinMediaQueryWidth(mqW11) {
+        background-color: $grey_2;
+    }
+}
+
+.forgot-lr {
+    margin-top: 2%;
+    margin-bottom: 10%;
+
+    font-size: 16px;
+    font-family: $Lato;
+
+    text-decoration: none;
+
+    color: $pink;
+
+    @include mixinMediaQueryWidth(mqW11) {
+        color: $grey_2;
+    }
+}

@@ -58,7 +58,7 @@
 
 .search-bar {
     width: 260px;
-    height: 30px;
+    height: 40px;
   
     background-color: $white;
     border-radius: 20px;
@@ -66,8 +66,8 @@
     border-color: $grey_1;
 
     @include mixinMediaQueryWidth(mqW3) {
-        width: 34px;
-        height: 34px;
+        width: 40px;
+        height: 40px;
     }
 
     // Si no pongo la media query aquí, no la coge.
@@ -101,9 +101,30 @@
     margin-left: 15px;
 
     background-color: $grey_2;
-    border-radius: 4px;
+    border-radius: 8px;
+    border: solid 3px $grey_2;
+
     text-decoration: none;
 
+    transition:.4s ease;
+
+    &:hover {
+        background-color: $pink;
+    }
+}
+
+.login-button-active {
+    width: 115px;
+    height: 34px;
+
+    margin-left: 15px;
+    
+    background-color: $grey_2;
+    border-radius: 8px;
+    border: solid 3px $pink;
+
+    text-decoration: none;
+  
     transition:.4s ease;
 
     &:hover {
@@ -119,9 +140,31 @@
     margin-left: 15px;
   
     background-color: $grey_2;
-    border-radius: 4px;
+    border-radius: 8px;
+    border: solid 3px $grey_2;
+
     text-decoration: none;
 
+    transition:.4s ease;
+
+    &:hover {
+        background-color: $pink;
+    }
+}
+
+.sign-up-button-active {
+    width: 115px;
+    height: 34px;
+
+    margin-right: 4%;
+    margin-left: 15px;
+    
+    background-color: $grey_2;
+    border-radius: 8px;
+    border: solid 3px $pink;
+
+    text-decoration: none;
+  
     transition:.4s ease;
 
     &:hover {

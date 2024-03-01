@@ -15,22 +15,26 @@
 
 .botones-nav {
     display: flex;
-
-    @include mixinMediaQueryWidth(mqW6) {
-        display: none;
-    }
 }
 
 .header-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mixinMediaQueryWidth(mqW6) {
+        display: none;
+    }
 }
 
 .header-button-active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include mixinMediaQueryWidth(mqW13) {
+        display: none;
+    }
 }
 
 .login-button {
@@ -43,12 +47,32 @@
     }
 }
 
+.login-button-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mixinMediaQueryWidth(mqW13) {
+        display: none;
+    }
+}
+
 .sign-up-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @include mixinMediaQueryWidth(mqW6) {
+        display: none;
+    }
+}
+
+.sign-up-button-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mixinMediaQueryWidth(mqW13) {
         display: none;
     }
 }
