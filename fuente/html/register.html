@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
+
+    <title>Sign In - Tokyo Archive</title>
     
     <link rel="stylesheet" href="../estilos/principal.scss"/>
 
@@ -34,28 +36,28 @@
         <li><a href="manga.html" class="botones-menu text-nav">Manga</a></li>
         <li><a href="anime.html" class="botones-menu text-nav">Anime</a></li>
         <li><a href="login.html" class="botones-menu text-nav">Login</a></li>
-        <li><a href="#" class="botones-menu text-nav">Sign Up</a></li>
+        <li><a href="#register" class="botones-menu text-nav">Sign Up</a></li>
       </ul>
     </nav>
     
-    <section class="section-lr">
+    <section class="section-lr" id="register">
         <article class="frame-lr">
             <h1 class="title-lr">Sign In</h1>
             <div class="field-lr">
-                <p class="text-lr">Usuario</p>
-                <input type="text" class="input-lr">
+                <label for="user" class="text-lr">Usuario</label>
+                <input type="text" id="user" class="input-lr">
             </div>
             <div class="field-lr">
-                <p class="text-lr">Email</p>
-                <input type="text" class="input-lr">
+              <label for="e-mail" class="text-lr">Correo</label>
+              <input type="text" id="e-mail" class="input-lr">
+          </div>
+            <div class="field-lr">
+                <label for="pass" class="text-lr">Contraseña</label>
+                <input type="text" id="pass" class="input-lr">
             </div>
             <div class="field-lr">
-                <p class="text-lr">Contraseña</p>
-                <input type="text" class="input-lr">
-            </div>
-            <div class="field-lr">
-                <p class="text-lr">Repetir Contraseña</p>
-                <input type="text" class="input-lr">
+                <label for="repPass" class="text-lr">Repetir Contraseña</label>
+                <input type="text" id="repPass" class="input-lr">
             </div>
             <div class="submit-lr">
                 <button class="button-lr">Sign In</button>
@@ -97,9 +99,9 @@
           <div class="footer-colum">
             <h4>Follow Us</h4>
             <div class="redes-sociales">
-              <a href="#"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"><p>Facebook</p></i></a>
+              <a href="#"><i class="bi bi-twitter"><p>Twitter</p></i></a>
+              <a href="#"><i class="bi bi-instagram"><p>Instagram</p></i></a>
             </div>
           </div>
           <div class="copyright">
