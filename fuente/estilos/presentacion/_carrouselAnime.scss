@@ -23,7 +23,20 @@
     position: absolute;
     z-index: 0;
 }
+
+.titulo-anime-inv {
+    margin-top: 3.334%;
+    margin-left: 5.556%;
   
+    font-family: $Arvo;
+    font-weight: 400;
+    font-size: 0px;
+
+    color: $grey_3;
+
+    letter-spacing: -0.5px;
+}
+
 .titulo-anime {
     margin-top: 3.334%;
     margin-left: 5.556%;
