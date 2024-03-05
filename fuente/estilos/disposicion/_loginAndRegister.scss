@@ -18,24 +18,8 @@
     align-self: flex-start;
 }
 
-.img2-lr {
-    display: none;
-
-    @include mixinMediaQueryWidth(mqW3) {
-        display: flex;
-    }
-
-    @include mixinMediaQueryWidth(mqW6) {
-        display: none;
-    }
-}
-
-.img-movil-lr {
-    display: none;
-
-    @include mixinMediaQueryWidth(mqW6) {
-        display: flex;
-    }
+.img-lr {
+    display: flex;
 
     @include mixinMediaQueryWidth(mqW11) {
         display: none;

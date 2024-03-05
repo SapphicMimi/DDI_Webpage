@@ -16,14 +16,14 @@
 
   <body>
     <header class="header" id="header">
-        <img id="logo" class="logotype" src="../img/header/logotype.png" />
+        <img id="logo" class="logotype" src="../img/header/logotype.webp" />
         <nav class="botones-nav">
           <a href="manga.html" class="header-button text">Manga</a>
           <a href="anime.html" class="header-button text">Anime</a>
         </nav>
         <article class="user-functions">
           <nav class="search-bar">
-            <img class="lupa" src="../img/header/lupa.png"/>
+            <img class="lupa" src="../img/header/lupa.webp"/>
             <input class="buscador" type="text" placeholder="Search...">
           </nav>
           <a href="#" class="login-button-active text">Login</a>
@@ -59,9 +59,11 @@
     </section>
 
     <section class="background-lr">
-        <img src="../img/login/frieren-recort.jpg" alt="Fondo" class="img-lr">
-        <img src="../img/login/frieren.jpg" alt="Fondo" class="img2-lr">
-        <img src="../img/login/frieren-movil-recort.jpg" alt="Fondo" class="img-movil-lr">
+      <picture class="img-lr">
+        <source type="image/webp" media="(max-width: 915px)" srcset="../img/login/frieren-movil-recort.webp">
+        <source type="image/webp" media="(max-width: 1218px)" srcset="../img/login/frieren.webp"> 
+        <img src="../img/login/frieren-recort.webp">
+      </picture>
     </section>
 
     <footer class="footer" id="footer">

@@ -10,7 +10,7 @@
     <script src="js/inicio.js" defer></script>
     <script src="js/cards.js" defer></script>
     <script src="js/menu.js" defer></script>
-    <script src="js/carrousel-movil.js" defer></script>
+
     <script src="js/carrousel-anime.js" defer></script>
     <script src="js/carrousel-manga.js" defer></script>
 
@@ -19,14 +19,14 @@
 
   <body>
     <header class="header">
-        <img id="logoInicio" class="logotype" src="img/header/logotype.png" />
+        <img id="logoInicio" class="logotype" src="img/header/logotype.webp" />
         <nav class="botones-nav">
           <a href="html/manga.html" class="header-button text">Manga</a>
           <a href="html/anime.html" class="header-button text">Anime</a>
         </nav>
         <article class="user-functions">
           <nav class="search-bar">
-            <img class="lupa" src="img/header/lupa.png"/>
+            <img class="lupa" src="img/header/lupa.webp"/>
             <input class="buscador" type="text" placeholder="Search...">
           </nav>
           <a href="html/login.html" class="login-button text">Login</a>
@@ -42,136 +42,68 @@
         <li><a href="html/register.html" class="botones-menu text-nav">Sign Up</a></li>
       </ul>
     </nav>
-    
-    <section class="section-anime-movil">
-      <article class="contenedor-carrousel-movil">
-        <aside class="carrousel-movil">
-          <div class="carrousel-slide-movil">
-            <img src="img/anime/movil/shangri-movil.jpg">
-          </div>
-          <div class="ocultacion">
-            <img src="img/anime/movil/elite-movil.jpg">
-          </div>
-          <div class="ocultacion">
-            <img src="img/anime/movil/jujus-movil.jpg">
-          </div>
-          <div class="ocultacion">
-            <img src="img/anime/movil/sasaki-movil.jpg">
-          </div>
-          <div class="ocultacion">
-            <img src="img/anime/movil/tales-movil.jpg">
-          </div>
-          <div class="ocultacion">
-            <img src="img/anime/movil/exorcist-movil.jpg">
-          </div>
-        </aside>
-      </article>
-
-      <article class="anime-movil">
-        <div class="contenedor-anime">
-          <h1 class="titulo-anime">Anime</h1>
-        </div>
-        <aside class="frame-movil">
-          <div class="carrousel-titulo-movil">
-            <div class="carrousel-titulo-img">
-              <img src="img/anime/titulos/shangri-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/elite-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/jujus-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/sasaki-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/tales-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/exorcist-titulo.png">
-            </div>
-          </div>
-          <div class="caja-comenzar">
-            <img class="img-play" src="img/anime/recursos/polygon.svg">
-            <button class="texto-comenzar">COMENZAR A VER</button>
-          </div>
-          <div class="botones-movil">
-              <button class="boton-pink"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-          </div>
-        </aside>
-      </article>
-    </section>
 
     <section class="section-anime-pc">
       <article class="contenedor-carrousel">
         <div class="carrousel">
-          <div class="carrousel-slide">
-            <picture> 
-              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/tate.jpg">-->
-              <img src="img/anime/pc-tablet/tate-recort.jpg">
-            </picture>
-          </div>
-          <div class="ocultacion">
-            <picture> 
-              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/elite.jpg">-->
-              <img src="img/anime/pc-tablet/elite-recort.jpg">
-            </picture>
-          </div>
-          <div class="ocultacion">
-            <picture> 
-              <!-- <source type="image/jpg" media="(max-width: 1854px)" srcset="img/jujus.jpg">-->
-              <img src="img/anime/pc-tablet/jujus-recort.jpg">
-            </picture>
-          </div>
-          <div class="ocultacion">
-            <picture> 
-              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/sasaki.jpg">-->
-              <img src="img/anime/pc-tablet/sasaki-recort.jpg">
-            </picture>
-          </div>
-          <div class="ocultacion">
-            <picture> 
-              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/tales.jpg">-->
-              <img src="img/anime/pc-tablet/tales-recort.jpg">
-            </picture>
-          </div>
-          <div class="ocultacion">
-            <picture> 
-              <!--<source type="image/jpg" media="(max-width: 1854px)" srcset="img/exorcist.jpg">-->
-              <img src="img/anime/pc-tablet/exorcist-recort.jpg">
-            </picture>
-          </div>
+          <picture class="carrousel-slide"> 
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/shangri-movil.webp">
+            <img  src="img/anime/pc-tablet/tate-recort.webp">
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/elite-movil.webp">
+            <img src="img/anime/pc-tablet/elite-recort.webp">
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/jujus-movil.webp">
+            <img src="img/anime/pc-tablet/jujus-recort.webp">
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/sasaki-movil.webp">
+            <img src="img/anime/pc-tablet/sasaki-recort.webp">
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/tales-movil.webp">
+            <img src="img/anime/pc-tablet/tales-recort.webp">
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/exorcist-movil.webp">
+            <img src="img/anime/pc-tablet/exorcist-recort.webp">
+          </picture>
         </div>
       </article>
+
       <article class="anime">
         <h1 class="titulo-anime">Anime</h1>
+
         <div class="frame">
           <aside class="carrousel-titulo">
-            <div class="titulo">
-              <img src="img/anime/titulos/tate-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/elite-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/jujus-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/sasaki-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/tales-titulo.png">
-            </div>
-            <div class="ocultacion">
-              <img src="img/anime/titulos/exorcist-titulo.png">
-            </div>
+            <picture class="titulo"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/shangri-titulo.webp">
+              <img src="img/anime/titulos/tate-titulo.webp">
+            </picture>
+            <picture class="ocultacion"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/elite-titulo.webp">
+              <img src="img/anime/titulos/elite-titulo.webp">
+            </picture>
+            <picture class="ocultacion"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/jujus-titulo.webp">
+              <img src="img/anime/titulos/jujus-titulo.webp">
+            </picture>
+            <picture class="ocultacion"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/sasaki-titulo.webp">
+              <img src="img/anime/titulos/sasaki-titulo.webp">
+            </picture>
+            <picture class="ocultacion"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/tales-titulo.webp">
+              <img src="img/anime/titulos/tales-titulo.webp">
+            </picture>
+            <picture class="ocultacion"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/exorcist-titulo.webp">
+              <img src="img/anime/titulos/exorcist-titulo.webp">
+            </picture>
           </aside>
+
           <aside class="descripciones">
             <p class="description">
               Iwatani Naofumi es el típico otaku, al menos hasta que un día encuentra en la 
@@ -208,10 +140,12 @@
               poseer sustancias materiales hace que estos se adentren en el mundo materia
             </p>
           </aside>
+
           <div class="caja-comenzar">
             <img class="img-play" src="img/anime/recursos/polygon.svg">
             <button class="texto-comenzar">COMENZAR A VER</button>
           </div>
+
           <aside class="botones">
               <button class="boton-pink"></button>
               <button class="boton"></button>
@@ -229,12 +163,12 @@
       <h1 class="new-title">Recommended Titles</h1>
       <article class="frame-manga">
         <div class="carrousel-manga">
-          <img class="imagen-manga" src="img/manga/carrousel/ushiro.png"/>
-          <img class="ocultacion" src="img/manga/carrousel/Zenbu.jpg"/>
-          <img class="ocultacion" src="img/manga/carrousel/existence.jpg"/>
-          <img class="ocultacion" src="img/manga/carrousel/morning.jpg"/>
-          <img class="ocultacion" src="img/manga/carrousel/shanai.png"/>
-          <img class="ocultacion" src="img/manga/carrousel/amasaya.jpg"/>
+          <img class="imagen-manga" src="img/manga/carrousel/ushiro.webp"/>
+          <img class="ocultacion" src="img/manga/carrousel/Zenbu.webp"/>
+          <img class="ocultacion" src="img/manga/carrousel/existence.webp"/>
+          <img class="ocultacion" src="img/manga/carrousel/morning.webp"/>
+          <img class="ocultacion" src="img/manga/carrousel/shanai.webp"/>
+          <img class="ocultacion" src="img/manga/carrousel/amasaya.webp"/>
         </div>
         <div class="textos">
           <div class="titulos-manga">
@@ -301,27 +235,27 @@
       </div>
       <ul class="frame-new-manga">
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/spyxfamily.png"/>
+          <img class="img-new-title" src="img/manga/new titles/spyxfamily.webp"/>
           <p class="text-new-title">SPY x FAMILY</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/frieren-manga.png"/>
+          <img class="img-new-title" src="img/manga/new titles/frieren-manga.webp"/>
           <p class="text-new-title">Sousou No Frieren</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/jujus-manga.png"/>
+          <img class="img-new-title" src="img/manga/new titles/jujus-manga.webp"/>
           <p class="text-new-title">Jujutsu Kaisen</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/ruirui-manga.png"/>
+          <img class="img-new-title" src="img/manga/new titles/ruirui-manga.webp"/>
           <p class="text-new-title">Ruirui Senki</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/apothecary.png"/>
+          <img class="img-new-title" src="img/manga/new titles/apothecary.webp"/>
           <p class="text-new-title">The Apothecary Diaries</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/last-tour-manga.png"/>
+          <img class="img-new-title" src="img/manga/new titles/last-tour-manga.webp"/>
           <p class="text-new-title">Girls’ Last Tour</p>
         </li>
       </ul>

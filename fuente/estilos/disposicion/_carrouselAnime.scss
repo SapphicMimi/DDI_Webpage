@@ -3,8 +3,13 @@
     flex-direction: column;
 
     @include mixinMediaQueryWidth(mqW12) {
-        display: none;
+        
     }
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
 }
 
 .carrousel {
@@ -15,9 +20,24 @@
     display: flex;
 }
 
+.carrousel-titulo {
+    display: flex;
+}
+
+.titulo {
+    @include mixinMediaQueryWidth(mqW12) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .anime {
     display: flex;
     flex-direction: column;
+
+    @include mixinMediaQueryWidth(mqW12) {
+        align-items: center;
+    }
 }
 
 .frame {
@@ -25,15 +45,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-.carrousel-titulo {
-    display: flex;
-}
-
-.titulo{
-    display: flex;
-    justify-content: center;
+    @include mixinMediaQueryWidth(mqW12) {
+        justify-content: flex-end;
+    }
 }
 
 .descripciones {
@@ -49,6 +64,16 @@
     }
 }
 
+.botones {
+    justify-self: start;
+    align-items: end;
+
+    @include mixinMediaQueryWidth(mqW12) {
+        display: flex;
+        justify-content: center
+    }
+}
+
 .caja-comenzar {
     display: flex;
     justify-content: center;
@@ -57,9 +82,4 @@
 .img-play {
     display: flex;
     justify-self: flex-end;
-}
-
-.botones {
-    justify-self: start;
-    align-items: end;
 }

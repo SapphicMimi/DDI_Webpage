@@ -2,24 +2,7 @@
     margin-bottom: -4%;
 }
 
-.img-lr {
-    width: 100%;
-
-    // Otra vez, si no pongo la media query aquí, no me va...
-    @include mixinMediaQueryWidth(mqW3) {
-        display: none;
-    }
-}
-
-.img2-lr {
-    width: 100%;
-}
-
-.img-movil-lr {
-    width: 100%;
-}
-
-.img-movil2-lr {
+.img-lr img{
     width: 100%;
 }
 
