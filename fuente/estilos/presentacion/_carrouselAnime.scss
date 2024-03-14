@@ -32,10 +32,11 @@
 .titulo-anime {
     margin-top: 3.334%;
     margin-left: 5.556%;
+    margin-bottom: 2%;
   
     font-family: $Arvo;
     font-weight: 700;
-    font-size: 58px;
+    font-size: 88px;
 
     color: $grey_3;
 
@@ -43,26 +44,35 @@
     line-height: 50px;
 
     @include mixinMediaQueryWidth(mqW2) {
-        font-size: 40px;
+        font-size: 72px;
         line-height: 36px;
         margin-left: 6.5%;
     }
 
     @include mixinMediaQueryWidth(mqW9) {
-        font-size: 34px;
+        font-size: 70px;
         line-height: 36px;
         margin-left: 7%;
     }
 
+    @include mixinMediaQueryWidth(mqW11) {
+        font-size: 68px;
+    }
+
     @include mixinMediaQueryWidth(mqW12) {
+        font-size: 64px;
+        
+        margin-top: 7%;
         margin-left: 7%;
-        margin-bottom: 74%;
+        margin-bottom: 70%;
     
         align-self: flex-start;
     }
 
     @include mixinMediaQueryWidth(mqW13) {
-        margin-bottom: 70%;
+        font-size: 48px;
+
+        margin-bottom: 66%;
     }
 }
 
@@ -93,13 +103,13 @@
 
     @include mixinMediaQueryWidth(mqW12) {
         margin-left: 7%;
-        margin-bottom: 74%;
+        margin-bottom: 88%;
     
         align-self: flex-start;
     }
 
     @include mixinMediaQueryWidth(mqW13) {
-        margin-bottom: 70%;
+        margin-bottom: 80%;
     }
 
     @include mixinMediaQueryWidth(mqW19) {
@@ -130,8 +140,14 @@
 .carrousel-titulo {
     width: auto;
 
+    align-items: center;
+
     img {
         width: 55%;
+
+        @include mixinMediaQueryWidth(mqW12) {
+            width: 85%;
+        }
     }
 }
   

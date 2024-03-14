@@ -8,7 +8,7 @@
   
     font-family: $Arvo;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 54px;
 
     color: $grey_2;
     
@@ -16,15 +16,31 @@
     line-height: 58px;
 
     @include mixinMediaQueryWidth(mqW2) {
-        font-size: 34px;
+        font-size: 48px;
         line-height: 44px;
         margin-left: 6%;
     }
 
     @include mixinMediaQueryWidth(mqW9) {
-        font-size: 28px;
+        font-size: 44px;
         line-height: 40px;
+
+        margin-top: 3%;
         margin-left: 6%;
+    }
+
+    @include mixinMediaQueryWidth(mqW12) {
+        margin-top: 4%;
+
+        font-size: 36px;
+    }
+
+    @include mixinMediaQueryWidth(mqW13) {
+        font-size: 34px;
+    }
+
+    @include mixinMediaQueryWidth(mqW14) {
+        font-size: 28px;
     }
 }
   

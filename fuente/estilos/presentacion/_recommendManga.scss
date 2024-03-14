@@ -1,23 +1,41 @@
 .manga {
-    margin-top: 3%;
+    margin-top: 4%;
     margin-left: 5%;
+    margin-bottom: 1%;
   
     font-family: $Arvo;
     font-weight: 700;
     color: $grey_2;
-    font-size: 58px;
+    font-size: 88px;
     letter-spacing: -0.5px;
     line-height: 24px;
 
     @include mixinMediaQueryWidth(mqW2) {
-        font-size: 40px;
+        font-size: 72px;
+
         margin-left: 6%;
     }
 
     @include mixinMediaQueryWidth(mqW9) {
-        font-size: 34px;
+        font-size: 70px;
+
         margin-left: 6%;
     }
+    
+    @include mixinMediaQueryWidth(mqW11) {
+        font-size: 64px;
+    }
+
+    @include mixinMediaQueryWidth(mqW12) {
+        margin-top: 7%; 
+
+        font-size: 64px;
+    }
+
+    @include mixinMediaQueryWidth(mqW13) {
+        font-size: 48px;
+    }
+    
 }
   
 .frame-manga {
@@ -82,15 +100,11 @@
     }
 
     @include mixinMediaQueryWidth(mqW12) {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     @include mixinMediaQueryWidth(mqW14) {
-        font-size: 24px;
-    }
-
-    @include mixinMediaQueryWidth(mqW15) {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
   
