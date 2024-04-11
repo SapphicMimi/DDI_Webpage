@@ -60,7 +60,7 @@
     }
 
     @include mixinMediaQueryWidth(mqW12) {
-        font-size: 64px;
+        font-size: 90px;
         
         margin-top: 7%;
         margin-left: 7%;
@@ -70,7 +70,7 @@
     }
 
     @include mixinMediaQueryWidth(mqW13) {
-        font-size: 48px;
+        font-size: 80px;
 
         margin-bottom: 66%;
     }
