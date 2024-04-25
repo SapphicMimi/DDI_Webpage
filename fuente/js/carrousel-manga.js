@@ -11,7 +11,7 @@ let desc_manga;
 let aut_manga;
 
 for(let boton of botones_manga.querySelectorAll("button")) {
-    boton.addEventListener("click", (evento) => {
+    boton.addEventListener("mouseenter", (evento) => {
         let cont = 0;
         let bool = true;
 

@@ -32,11 +32,11 @@
 .titulo-anime {
     margin-top: 3.334%;
     margin-left: 5.556%;
-    margin-bottom: 2%;
+    margin-bottom: 0.5%;
   
     font-family: $Arvo;
     font-weight: 700;
-    font-size: 88px;
+    font-size: 55px;
 
     color: $grey_3;
 
@@ -44,35 +44,42 @@
     line-height: 50px;
 
     @include mixinMediaQueryWidth(mqW2) {
-        font-size: 72px;
+        font-size: 50px;
         line-height: 36px;
         margin-left: 6.5%;
     }
 
     @include mixinMediaQueryWidth(mqW9) {
-        font-size: 70px;
+        font-size: 45px;
         line-height: 36px;
         margin-left: 7%;
     }
 
     @include mixinMediaQueryWidth(mqW11) {
-        font-size: 68px;
+        margin-top: 2.334%;
+
+        font-size: 40px;
     }
 
     @include mixinMediaQueryWidth(mqW12) {
-        font-size: 90px;
+        font-size: 45px;
         
-        margin-top: 7%;
-        margin-left: 7%;
-        margin-bottom: 70%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-bottom: 68%;
     
         align-self: flex-start;
+
+        background: $grey_2;
+
+        padding: 3%;
+        border-radius: 20px;
     }
 
     @include mixinMediaQueryWidth(mqW13) {
-        font-size: 80px;
+        font-size: 40px;
 
-        margin-bottom: 66%;
+        margin-bottom: 64%;
     }
 }
 
@@ -118,7 +125,7 @@
 }
   
 .frame {
-    width: 50%;
+    width: 40%;
     border-radius: 39px;
     background: linear-gradient(180deg, rgb(236, 236, 236) 50%, rgba(236, 236, 236, 0) 100%);
     margin-left: 3%;
@@ -158,7 +165,34 @@
   
     flex-shrink: 0;
 }
+
+.pertenece {
+    width: 84%;
+    padding-bottom: 2%;
+}
   
+.observable  {
+    font-family: $Lato;
+    font-weight: 900;
+    font-size: 16px;
+
+    color: $grey_2;
+
+    letter-spacing: -0.16px;
+
+    @include mixinMediaQueryWidth(mqW9) {
+        font-size: 10px;
+    }
+
+    @include mixinMediaQueryWidth(mqW12) {
+        display: none;
+    }
+}
+
+.remarcado {
+    font-weight: 900;
+}
+
 .descripciones {
     width: 84%;
     padding-bottom: 2%;
@@ -184,6 +218,12 @@
 
     overflow: hidden;
 }
+
+.botones-caja {
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
   
 .texto-comenzar {
     font-family: $Lato;
@@ -203,7 +243,7 @@
     padding-bottom: 3%;
 
     @include mixinMediaQueryWidth(mqW12) {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 

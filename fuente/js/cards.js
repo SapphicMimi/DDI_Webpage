@@ -1,13 +1,27 @@
-let frame = document.querySelector(".frame-new-manga");
-let cardWidth = frame.querySelector(".cards").offsetWidth;
-let arrows = document.querySelectorAll(".arrow");
+let frameManga = document.querySelector(".frame-new-manga");
+let cardWidthManga = frameManga.querySelector(".cards").offsetWidth;
+let arrowsManga = document.querySelectorAll(".arrowManga");
 
-arrows.forEach(arrow => {
+arrowsManga.forEach(arrow => {
     arrow.addEventListener("click", () => {
         if (arrow.id == "flecha_izq") {
-            frame.scrollLeft -= cardWidth;
+            frameManga.scrollLeft -= cardWidthManga;
         } else {
-            frame.scrollLeft += cardWidth;
+            frameManga.scrollLeft += cardWidthManga;
+        }
+    });
+});
+
+let frameAnime = document.querySelector(".frame-new-anime");
+let cardWidthAnime = frameAnime.querySelector(".cards").offsetWidth;
+let arrowsAnime = document.querySelectorAll(".arrowAnime");
+
+arrowsAnime.forEach(arrow => {
+    arrow.addEventListener("click", () => {
+        if (arrow.id == "flecha_izq") {
+            frameAnime.scrollLeft -= cardWidthAnime;
+        } else {
+            frameAnime.scrollLeft += cardWidthAnime;
         }
     });
 });

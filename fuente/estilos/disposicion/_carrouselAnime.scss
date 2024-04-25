@@ -51,6 +51,15 @@
     }
 }
 
+.pertenece {
+    display: flex;
+    justify-content: center;
+}
+
+.observable  {
+    text-align: center;
+}
+
 .descripciones {
     display: flex;
     justify-content: center;
@@ -82,4 +91,9 @@
 .img-play {
     display: flex;
     justify-self: flex-end;
+}
+
+.botones-caja {
+    display: flex;
+    justify-content: center;
 }

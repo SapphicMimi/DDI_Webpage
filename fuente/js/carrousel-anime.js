@@ -2,11 +2,15 @@ let botones_anime = document.querySelector(".botones");
 let imgs_anime = document.querySelector(".carrousel");
 let titus_anime = document.querySelector(".carrousel-titulo");
 let descs_anime = document.querySelector(".descripciones");
+let caja_anime = document.querySelector(".caja-comenzar");
+let cats_anime = document.querySelector(".pertenece");
 
 let botonp_anime;
 let img_anime;
 let titu_anime;
 let desc_anime;
+let boton_caja_anime;
+let cat_anime;
 
 for(let boton of botones_anime.querySelectorAll("button")) {
     boton.addEventListener("mouseenter", (evento) => {
@@ -39,6 +43,14 @@ for(let boton of botones_anime.querySelectorAll("button")) {
             desc_anime = desc;
         }
 
+        for(let boton_caja of caja_anime.getElementsByClassName("texto-comenzar")) {
+            boton_caja_anime = boton_caja;
+        }
+
+        for(let cat of cats_anime.getElementsByClassName("observable")) {
+            cat_anime = cat;
+        }
+
         if(!(evento.target == botonp_anime)) {
             evento.target.classList.add("boton-pink");
             evento.target.classList.remove("boton");
@@ -63,6 +75,18 @@ for(let boton of botones_anime.querySelectorAll("button")) {
 
             desc_anime.classList.add("ocultacion");
             desc_anime.classList.remove("description");
+
+            caja_anime.querySelector(".ocultacion:nth-child(" + (cont + 1) + ")").classList.add("texto-comenzar");
+            caja_anime.querySelector(".ocultacion:nth-child(" + (cont + 1) + ")").classList.remove("ocultacion");
+
+            boton_caja_anime.classList.add("ocultacion");
+            boton_caja_anime.classList.remove("texto-comenzar");
+
+            cats_anime.querySelector(".ocultacion:nth-child(" + cont + ")").classList.add("observable");
+            cats_anime.querySelector(".ocultacion:nth-child(" + cont + ")").classList.remove("ocultacion");
+
+            cat_anime.classList.add("ocultacion");
+            cat_anime.classList.remove("observable");
         }
 
     })

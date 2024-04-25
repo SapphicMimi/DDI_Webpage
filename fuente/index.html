@@ -11,14 +11,13 @@
     <script src="js/menu.js" defer></script>
 
     <script src="js/carrousel-anime.js" defer></script>
-    <script src="js/carrousel-manga.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
 
   <body>
     <header class="header">
-        <img class="logotype" src="img/header/logotype.webp" />
+        <img class="logotype" src="img/header/logotype.webp"/>
         <nav class="botones-nav">
           <a href="html/manga.html" class="header-button text">Manga</a>
           <a href="html/anime.html" class="header-button text">Anime</a>
@@ -46,8 +45,8 @@
       <article class="contenedor-carrousel">
         <div class="carrousel">
           <picture class="carrousel-slide"> 
-            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/shangri-movil.webp">
-            <img  src="img/anime/pc-tablet/tate-recort.webp">
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/banners/houseki_banner_movil.webp">
+            <img src="img/manga/banners/houseki_banner.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/elite-movil.webp">
@@ -58,12 +57,12 @@
             <img src="img/anime/pc-tablet/jujus-recort.webp">
           </picture>
           <picture class="ocultacion"> 
-            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/sasaki-movil.webp">
-            <img src="img/anime/pc-tablet/sasaki-recort.webp">
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/banners/oshi_no_ko_banner_movil.webp">
+            <img src="img/manga/banners/oshi_no_ko_banner.webp">
           </picture>
           <picture class="ocultacion"> 
-            <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/tales-movil.webp">
-            <img src="img/anime/pc-tablet/tales-recort.webp">
+            <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/banners/one_piece_banner_movil.webp">
+            <img src="img/manga/banners/one_piece_banner.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/exorcist-movil.webp">
@@ -73,76 +72,106 @@
       </article>
 
       <article class="anime">
-        <h1 class="titulo-anime">Anime</h1>
+        <h1 class="titulo-anime">Popular</h1>
 
         <div class="frame">
           <aside class="carrousel-titulo">
             <picture class="titulo"> 
-              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/shangri-titulo-movil.webp">
-              <img src="img/anime/titulos/tate-titulo.webp">
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/titles/plantilla_manga.webp">
+              <img src="img/manga/titles/houseki_title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/elite-titulo-movil.webp">
-              <img src="img/anime/titulos/elite-titulo.webp">
+              <img src="img/anime/titulos/elite-title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/jujus-titulo-movil.webp">
-              <img src="img/anime/titulos/jujus-titulo.webp">
+              <img src="img/anime/titulos/jujus-title.webp">
             </picture>
             <picture class="ocultacion"> 
-              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/sasaki-titulo-movil.webp">
-              <img src="img/anime/titulos/sasaki-titulo.webp">
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/titles/plantilla_manga.webp">
+              <img src="img/manga/titles/oshi_no_ko_title.webp">
             </picture>
             <picture class="ocultacion"> 
-              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/tales-titulo-movil.webp">
-              <img src="img/anime/titulos/tales-titulo.webp">
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/titles/plantilla_manga.webp">
+              <img src="img/manga/titles/one_piece_title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/exorcist-titulo-movil.webp">
-              <img src="img/anime/titulos/exorcist-titulo.webp">
+              <img src="img/anime/titulos/exorcist-title.webp">
             </picture>
           </aside>
 
+          <div class="pertenece">
+            <p class="observable">
+              Esta obra se califica o pertenece a la Categoría Manga
+            </p>
+            <p class="ocultacion">
+              Esta obra se califica o pertenece a la Categoría Anime
+            </p>
+            <p class="ocultacion">
+              Esta obra se califica o pertenece a la Categoría Anime
+            </p>
+            <p class="ocultacion">
+              Esta obra se califica o pertenece a la Categoría Manga
+            </p>
+            <p class="ocultacion">
+              Esta obra se califica o pertenece a la Categoría Manga
+            </p>
+            <p class="ocultacion">
+              Esta obra se califica o pertenece a la Categoría Anime
+            </p>
+          </div>
+
           <aside class="descripciones">
             <p class="description">
-              Iwatani Naofumi es el típico otaku, al menos hasta que un día encuentra en la 
-              biblioteca un libro que lo transporta a otro mundo. Allí se convertirá en el 
-              Héroe del Escudo, uno de los Cuatro Héroes Cardinales, y tendrá que luchar contra 
-              las Olas de la Catástrofe junto a los otros héroes...
+              En un mundo habitado por formas de vida cristalinas llamadas The Lustrous, cada 
+              gema única debe luchar por su forma de vida contra la amenaza de los lunarianos 
+              que las convertirían en decoraciones. La fosfofilita, la gema más frágil y 
+              quebradiza, anhela unirse a la batalla con ...
             </p>
             <p class="ocultacion">
-              Kiyotaka Ayanokouji acaba de entrar en la Academia Tokyo Koudo Ikusei, de la 
-              cual se dice que el 100% de sus estudiantes acaban yendo a la 
-              universidad o encontrando un buen trabajo. Sin embargo nuestro 
-              protagonista acaba en la Clase 1-D...
+              Kiyotaka Ayanokouji es un estudiante de la clase D, que es donde la escuela deja 
+              a sus estudiantes "inferiores" para ridiculizarlos. Por cierta razón, Kiyotaka fue 
+              descuidado en su examen de ingreso y fue puesto en la clase D. Después de conocer 
+              a Suzune Horikita y Kikyou Kushida vio lo...
             </p>
             <p class="ocultacion">
-              Dificultades, arrepentimiento, vergüenza… Los sentimientos negativos de los humanos 
-              se convierten en Maldiciones que nos acechan en nuestra vida diaria. Las
-              Maldiciones campan a sus anchas por todo el mundo, y pueden llevar a 
-              las personas a sufrir terribles desgracias...
+              Penurias, arrepentimiento, vergüenza: los sentimientos negativos que sentimos 
+              los humanos se convierten en maldiciones que acechan en nuestra vida cotidiana. 
+              Las Maldiciones corren desenfrenadas por todo el mundo y son capaces de llevar a 
+              las personas a terribles desgracias a su v...
             </p>
             <p class="ocultacion">
-              Sasaki es un oficinista de mediana edad que vive en Japón. La monotonía del mundo 
-              laboral le agota, así que un día decide entrar en una tienda de animales en busca 
-              de un nuevo compañero. Pero Sasaki no tarda en descubrir que Pi no es un pájaro cualquiera...
+              Gorou es un ginecólogo y fanático de los ídolos que está en shock después de que su 
+              estrella favorita, Ai, anuncia una pausa improvisada. ¡Gorou no se da cuenta de que 
+              está a punto de forjar un vínculo con ella que desafía todo sentido común! 
+              ¡Pero las mentiras son el arma de una ídolo!
             </p>
             <p class="ocultacion">
-              Sato es un chico de secundaria enamorado de su mejor amiga, Hime, una chica 
-              preciosa que procede de otro mundo. Cuando ella regresa a su mundo natal
-              para casarse, no se lo piensa dos veces: la sigue y echa por tierra la 
-              boda. Cuando Hime le besa, Sato se convierte en el nuevo nuevo...
+              Gold Roger era conocido como el Rey Pirata, el ser más fuerte e infame que había 
+              navegado por Grand Line. La captura y muerte de Roger por el Gobierno Mundial trajo 
+              un cambio en todo el mundo. Sus últimas palabras antes de su muerte revelaron la 
+              ubicación del mayor tesoro del mundo...
             </p>
             <p class="ocultacion">
-              En el mundo existen Assiah, el territorio de los humanos, y Gehenna, el territorio de los demonios.
-              Aunque normalmente estas dos dimensiones no suelen cruzarse, el que los humanos hayan conseguido 
-              poseer sustancias materiales hace que estos se adentren en el mundo materia
+              Este mundo consta de dos dimensiones unidas como una sola, como un espejo. El primero 
+              es el mundo en el que viven los humanos, Assiah. El otro es el mundo de los demonios, 
+              Gehenna. Normalmente, los viajes entre los dos y, de hecho, cualquier tipo de contacto
+              entre los dos, es imposible...
             </p>
           </aside>
 
           <div class="caja-comenzar">
             <img class="img-play" src="img/anime/recursos/polygon.svg">
-            <button class="texto-comenzar">COMENZAR A VER</button>
+
+            <button class="texto-comenzar">COMENZAR A <b>LEER</b></button>
+            <button class="ocultacion">COMENZAR A <b>VER</b></button>
+            <button class="ocultacion">COMENZAR A <b>VER</b></button>
+            <button class="ocultacion">COMENZAR A <b>LEER</b></button>
+            <button class="ocultacion">COMENZAR A <b>LEER</b></button>
+            <button class="ocultacion">COMENZAR A <b>VER</b></button>
+            
           </div>
 
           <aside class="botones">
@@ -157,84 +186,14 @@
       </article>  
     </section>
 
-    <section class="seccion-manga">
-      <h1 class="manga">Manga</h1>
-      <h1 class="new-title">Recommended Titles</h1>
-      <article class="frame-manga">
-        <div class="carrousel-manga">
-          <img class="imagen-manga" src="img/manga/carrousel/ushiro.webp"/>
-          <img class="ocultacion" src="img/manga/carrousel/Zenbu.webp"/>
-          <img class="ocultacion" src="img/manga/carrousel/existence.webp"/>
-          <img class="ocultacion" src="img/manga/carrousel/morning.webp"/>
-          <img class="ocultacion" src="img/manga/carrousel/shanai.webp"/>
-          <img class="ocultacion" src="img/manga/carrousel/amasaya.webp"/>
-        </div>
-        <div class="textos">
-          <div class="titulos-manga">
-            <p class="titulo-manga">Ushiro no Seki no Gyaru ni Sukarete Shimatta</p>
-            <p class="ocultacion">Zenbu Osake no Sei ni Shite</p>
-            <p class="ocultacion">She Has Become a Distant Existence</p>
-            <p class="ocultacion">They Are Still Being Shaken This Morning.</p>
-            <p class="ocultacion">Shanai System Subete Wanope shiteiru desu ka?</p>
-            <p class="ocultacion">Amasaya</p>
-          </div>
-          <div class="descs-manga">
-            <p class="desc-manga">
-              ¿Mi vida escolar ha cambiado drásticamente solo porque le gusto y apenas hablo?<br />Yuizaki Shino, una
-              de las chicas más bellas de la escuela...
-            </p>
-            <p class="ocultacion">
-              Yo, que me reuní con mi ex compañero de clase Hajime Aosaki en un pub, me convertí en compañero de bebida 
-              con ella. Mientras la cuidaba, que es una mala borracha, ¡¿hoy se desarrolló una situación inesperada...?!
-            </p>
-            <p class="ocultacion">
-              Una vez ella fue su amiga de la infancia y solía salir con él todo el tiempo. Ahora ella es una ídolo 
-              televisiva reconocida a nivel nacional y todavía sale con él todo el tiempo. ¡Una existencia tan lejana, 
-              está en otra realidad!
-            </p>
-            <p class="ocultacion">
-              Esta es la típica historia de un chico que está enamorado en secreto de una chica, ambos comparten un viaje
-               de 20 minutos en el tren de cercanías camino a diferentes colegios, ¿podrá el chico acercarse a la chica y 
-               confesarle su amor? Y además...  
-            </p>
-            <p class="ocultacion">
-              Satou Ai, que ha estado manejando el sistema interno de la compañía como un solo hombre, recibió una notificación 
-              de despido por un cambio de presidente. Después del despido, Ai quedó sola en profunda tristeza...
-            </p>
-            <p class="ocultacion">
-              La genial Amamiya Aoi, de cabello negro, y la gyaru Shiina Saya, de cabello rubio.
-            </p>
-          </div>
-          <div class="bottom">
-            <div class="autores-manga">
-              <p class="autor">Michinoku Koharu, Suya Maromi</p>
-              <p class="ocultacion">Nikumaru</p>
-              <p class="ocultacion">Kiyu Fuyuki</p>
-              <p class="ocultacion">Masuda Eiji</p>
-              <p class="ocultacion">Io (伊於), Kashirome Yuki</p>
-              <p class="ocultacion">すとろべりぃ</p>
-            </div>
-            <div class="botones-manga">
-              <button class="boton-pink"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
     <section class="seccion-new-manga">
-      <h2 class="new-title">New Manga Titles</h2>
-      <div id="flecha_izq" class="flecha-izquierda arrow">
+      <h2 class="new-title">New Manga</h2>
+      <div id="flecha_izq" class="flecha-izquierda arrowManga">
         <i class="bi bi-arrow-left-circle-fill"></i>
       </div>
       <ul class="frame-new-manga">
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/spyxfamily.webp"/>
+          <img class="img-new-title first" src="img/manga/new titles/spyxfamily.webp"/>
           <p class="text-new-title">SPY x FAMILY</p>
         </li>
         <li class="cards">
@@ -251,14 +210,52 @@
         </li>
         <li class="cards">
           <img class="img-new-title" src="img/manga/new titles/apothecary.webp"/>
-          <p class="text-new-title">The Apothecary Diaries</p>
+          <p class="text-new-title">Apothecary Diaries</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="img/manga/new titles/last-tour-manga.webp"/>
+          <img class="img-new-title last" src="img/manga/new titles/last-tour-manga.webp"/>
           <p class="text-new-title">Girls’ Last Tour</p>
         </li>
       </ul>
-      <div id="flecha-der" class="flecha-derecha arrow">
+      <div id="flecha-der" class="flecha-derecha arrowManga">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </div>
+    </section>
+
+    <section class="seccion-new-anime">
+      <h2 class="new-title">New Animes</h2>
+      <div id="flecha_izq" class="flecha-izquierda arrowAnime">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+      </div>
+      <ul class="frame-new-anime">
+        
+        <li class="cards">
+          <img class="img-new-title first" src="img/anime/carrousel/spy.webp"/>
+          <p class="text-new-title">SPY x FAMILY</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/anime/carrousel/buddy.webp"/>
+          <p class="text-new-title">Buddy Daddies</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/anime/carrousel/chainsaw.webp"/>
+          <p class="text-new-title">Chainsaw Man</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/anime/carrousel/fairy.webp"/>
+          <p class="text-new-title">Fairy Tail - F.S.</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title" src="img/anime/carrousel/Gintama.webp"/>
+          <p class="text-new-title">Gintama</p>
+        </li>
+        <li class="cards">
+          <img class="img-new-title last" src="img/anime/carrousel/naruto.webp"/>
+          <p class="text-new-title">Naruto</p>
+        </li>
+        
+      </ul>
+      <div id="flecha-der" class="flecha-derecha arrowAnime">
         <i class="bi bi-arrow-right-circle-fill"></i>
       </div>
     </section>
