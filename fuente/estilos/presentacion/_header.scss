@@ -16,18 +16,15 @@
     width: 168px;
     height: 42px;
     margin-left: 3%;
+    margin-right: 2%;
 }
 
 .header-button {
-    width: 155px;
-    height: 34px;
-    margin-left: 12%;
+    width: 80px;
+    height: 65px;
     
     background-color: $grey_2;
-    border-radius: 8px;
-    border: solid 3px $grey_2;
     text-decoration: none;
-  
     transition:.4s ease;
 
     &:hover {
@@ -36,20 +33,13 @@
 }
 
 .header-button-active {
-    width: 155px;
-    height: 34px;
-    margin-left: 12%;
+    width: 80px;
+    height: 65px;
     
-    background-color: $grey_2;
-    border-radius: 8px;
-    border: solid 3px $pink;
+    background-color: $pink;
     text-decoration: none;
-  
     transition:.4s ease;
 
-    &:hover {
-        background-color: $pink;
-    }
 }
 
 .user-functions {
@@ -60,6 +50,8 @@
     width: 260px;
     height: 40px;
   
+    margin-top: 10.5px;
+
     background-color: $white;
     border-radius: 20px;
     border: 1px solid;
@@ -84,6 +76,8 @@
     color: $grey_2;
 
     border: 2px solid $grey_2;
+
+    margin-top: 1px;
 }
 
 .lupa {
@@ -95,14 +89,12 @@
 }
 
 .login-button {
-    width: 115px;
-    height: 34px;
+    width: 80px;
+    height: 65px;
 
-    margin-left: 15px;
+    margin-left: 20px;
 
     background-color: $grey_2;
-    border-radius: 8px;
-    border: solid 3px $grey_2;
 
     text-decoration: none;
 
@@ -117,31 +109,22 @@
     width: 115px;
     height: 34px;
 
-    margin-left: 15px;
-    
-    background-color: $grey_2;
-    border-radius: 8px;
-    border: solid 3px $pink;
+    margin-left: 20px;
 
     text-decoration: none;
+    background-color: $pink;
   
     transition:.4s ease;
 
-    &:hover {
-        background-color: $pink;
-    }
 }
 
 .sign-up-button {
-    width: 115px;
-    height: 34px;
+    width: 80px;
+    height: 65px;
 
     margin-right: 4%;
-    margin-left: 15px;
   
     background-color: $grey_2;
-    border-radius: 8px;
-    border: solid 3px $grey_2;
 
     text-decoration: none;
 
@@ -157,17 +140,10 @@
     height: 34px;
 
     margin-right: 4%;
-    margin-left: 15px;
     
-    background-color: $grey_2;
-    border-radius: 8px;
-    border: solid 3px $pink;
+    background-color: $pink;
 
     text-decoration: none;
   
     transition:.4s ease;
-
-    &:hover {
-        background-color: $pink;
-    }
 }

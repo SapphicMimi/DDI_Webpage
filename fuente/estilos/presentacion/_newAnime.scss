@@ -1,5 +1,5 @@
-.frame-new-anime {
-    width: 95%;
+.frame-sec-new-anime {
+    width: 92%;
     background-color: $grey_2;
     border-radius: 39px;
 
@@ -7,6 +7,30 @@
     
     @include mixinMediaQueryWidth(mqW9) {
         border-radius: 20px;
+    }
+
+    @include mixinMediaQueryWidth(mqW9) {
+        border-radius: 20px;
+    }
+
+    @include mixinMediaQueryWidth(mqW1) {
+        width: 93%;
+    }
+
+    @include mixinMediaQueryWidth(mqW16) {
+        width: 92%;
+    }
+
+    @include mixinMediaQueryWidth(mqW8) {
+        width: 90%;
+    }
+
+    @include mixinMediaQueryWidth(mqW10) {
+        width: 88%;
+    }
+
+    @include mixinMediaQueryWidth(mqW12) {
+        width: 90%;
     }
 }
 
@@ -103,5 +127,13 @@
     @include mixinMediaQueryWidth(mqW13) {
         margin-left: 3%;
         width: 21%;
+    }
+}
+
+.primerito {
+    margin-top: 0%;
+
+    @include mixinMediaQueryWidth(mqW16) {
+        margin-top: 2%;
     }
 }

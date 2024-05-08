@@ -12,22 +12,22 @@
   
     font-family: $Arvo;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 42px;
 
     color: $grey_2;
     
     letter-spacing: -0.5px;
-    line-height: 58px;
+    line-height: 40px;
 
     @include mixinMediaQueryWidth(mqW2) {
-        font-size: 48px;
-        line-height: 44px;
+        font-size: 34px;
+        line-height: 34px;
         margin-left: 6%;
     }
 
     @include mixinMediaQueryWidth(mqW9) {
-        font-size: 44px;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 32px;
 
         margin-top: 3%;
         margin-left: 6%;
@@ -36,53 +36,19 @@
     @include mixinMediaQueryWidth(mqW12) {
         margin-top: 4%;
 
-        font-size: 36px;
+        font-size: 32px;
     }
 
     @include mixinMediaQueryWidth(mqW13) {
-        font-size: 34px;
+        font-size: 30px;
     }
 
     @include mixinMediaQueryWidth(mqW14) {
-        font-size: 28px;
+        font-size: 30px;
     }
 }
   
-.frame-new-anime {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  
-    width: 92%;
-    background-color: $black;
-    border-radius: 25px;
-
-    @include mixinMediaQueryWidth(mqW9) {
-        border-radius: 20px;
-    }
-
-    @include mixinMediaQueryWidth(mqW1) {
-        width: 93%;
-    }
-
-    @include mixinMediaQueryWidth(mqW16) {
-        width: 92%;
-    }
-
-    @include mixinMediaQueryWidth(mqW8) {
-        width: 90%;
-    }
-
-    @include mixinMediaQueryWidth(mqW10) {
-        width: 88%;
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        width: 90%;
-    }
-}
-
+.frame-new-anime, 
 .frame-new-manga {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
