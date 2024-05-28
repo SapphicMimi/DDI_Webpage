@@ -46,6 +46,10 @@
     @include mixinMediaQueryWidth(mqW14) {
         font-size: 30px;
     }
+
+    i {
+        font-size: 50px;
+    }
 }
   
 .frame-new-anime, 

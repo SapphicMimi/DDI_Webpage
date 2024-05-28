@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Anime - Tokyo Archive</title>
     
@@ -10,6 +11,7 @@
     <script src="../js/inicio.js" defer></script>
     <script src="../js/cards-standalone.js" defer></script>
     <script src="../js/menu.js" defer></script>
+    <script src="../js/new-episodes.js" defer></script>
 
     <script src="../js/carrousel-anime.js" defer></script>
 
@@ -47,27 +49,39 @@
         <div class="carrousel">
           <picture class="carrousel-slide"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/movil/shangri-movil.webp">
-            <img  src="../img/anime/pc-tablet/tate-recort.webp">
+            <source type="image/webp" media="(max-width: 1250px)" srcset="../img/anime/pc-tablet/tate-recort-tablet.webp">
+            <source type="image/webp" media="(max-width: 1920px)" srcset="../img/anime/pc-tablet/tate-recort.webp">
+            <img src="../img/anime/pc-tablet/tate-recort-2k.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/movil/elite-movil.webp">
-            <img src="../img/anime/pc-tablet/elite-recort.webp">
+            <source type="image/webp" media="(max-width: 1250px)" srcset="../img/anime/pc-tablet/elite-recort-tablet.webp">
+            <source type="image/webp" media="(max-width: 1920px)" srcset="../img/anime/pc-tablet/elite-recort.webp">
+            <img src="../img/anime/pc-tablet/elite-recort-2k.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/movil/jujus-movil.webp">
-            <img src="../img/anime/pc-tablet/jujus-recort.webp">
+            <source type="image/webp" media="(max-width: 1250px)" srcset="../img/anime/pc-tablet/jujus-recort-tablet.webp">
+            <source type="image/webp" media="(max-width: 1920px)" srcset="../img/anime/pc-tablet/jujus-recort.webp">
+            <img src="../img/anime/pc-tablet/jujus-recort-2k.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/movil/sasaki-movil.webp">
-            <img src="../img/anime/pc-tablet/sasaki-recort.webp">
+            <source type="image/webp" media="(max-width: 1250px)" srcset="../img/anime/pc-tablet/sasaki-recort-tablet.webp">
+            <source type="image/webp" media="(max-width: 1920px)" srcset="../img/anime/pc-tablet/sasaki-recort.webp">
+            <img src="../img/anime/pc-tablet/sasaki-recort-2k.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/movil/tales-movil.webp">
-            <img src="../img/anime/pc-tablet/tales-recort.webp">
+            <source type="image/webp" media="(max-width: 1250px)" srcset="../img/anime/pc-tablet/tales-recort-tablet.webp">
+            <source type="image/webp" media="(max-width: 1920px)" srcset="../img/anime/pc-tablet/tales-recort.webp">
+            <img src="../img/anime/pc-tablet/tales-recort-2k.webp">
           </picture>
           <picture class="ocultacion"> 
             <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/movil/exorcist-movil.webp">
-            <img src="../img/anime/pc-tablet/exorcist-recort.webp">
+            <source type="image/webp" media="(max-width: 1250px)" srcset="../img/anime/pc-tablet/exorcist-recort-tablet.webp">
+            <source type="image/webp" media="(max-width: 1920px)" srcset="../img/anime/pc-tablet/exorcist-recort.webp">
+            <img src="../img/anime/pc-tablet/exorcist-recort-2k.webp">
           </picture>
         </div>
       </article>
@@ -79,27 +93,27 @@
           <aside class="carrousel-titulo">
             <picture class="titulo"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/shangri-titulo-movil.webp">
-              <img src="../img/anime/titulos/tate-titulo.webp">
+              <img src="../img/anime/titulos/tate-title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/elite-titulo-movil.webp">
-              <img src="../img/anime/titulos/elite-titulo.webp">
+              <img src="../img/anime/titulos/elite-title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/jujus-titulo-movil.webp">
-              <img src="../img/anime/titulos/jujus-titulo.webp">
+              <img src="../img/anime/titulos/jujus-title.webp">
             </picture>
             <picture class="ocultacion"> 
-              <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/sasaki-titulo-movil3.webp">
-              <img src="../img/anime/titulos/sasaki-titulo.webp">
+              <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/sasaki-titulo-movil.webp">
+              <img src="../img/anime/titulos/sasaki-title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/tales-titulo-movil.webp">
-              <img src="../img/anime/titulos/tales-titulo.webp">
+              <img src="../img/anime/titulos/tales-title.webp">
             </picture>
             <picture class="ocultacion"> 
               <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/titulos/exorcist-titulo-movil.webp">
-              <img src="../img/anime/titulos/exorcist-titulo.webp">
+              <img src="../img/anime/titulos/exorcist-title.webp">
             </picture>
           </aside>
 
@@ -158,53 +172,137 @@
     </section>
     
     <section class="sec-new-anime" id="new">
-        <h1 class="new-title">New Episodes</h1>
+        <h1 class="new-title"><i class="bi bi-display"></i></i> New Episodes</h1>
         <article class="frame-sec-new-anime">
             <h3 class="adverb">Today</h3>
             <aside class="today">
-                <div class="episode primerito">
-                    <img class="episode-img" src="../img/anime/episodes/madoka.webp">
-                    <div class="texts-episode">
-                        <p class="title-episode">Puella Magi Madoka Magica</p>
-                        <p class="num-episode">Episode 1</p>
+                <div class="episode">
+                  <picture class="episode-img"> 
+                    <source type="image/webp" media="(max-width: 435px)" srcset="../img/anime/episodes/madoka_more_low.webp">
+                    <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/episodes/madoka_low.webp">
+                    <img src="../img/anime/episodes/madoka.webp">
+                  </picture>
+                  <div class="texts-episode">
+                    <p class="title-episode">Puella Magi Madoka Magica</p>
+                    <p class="num-episode">Episode 1</p>
+                    <div class="more-details ocultacion">
+                      <p class="more-text">Subtitulado</p>
+                      <p class="duration-cap">22:20</p>
+                    </div>
+                    <div class="repro ocultacion">
+                      <a href="#" class="icon-play">
+                        <i class="bi bi-play-circle"></i>
+                      </a>
+                      <p class="rep-ep">REPRODUCIR E1</p>
                     </div>
                 </div>
+                </div>
                 <div class="episode">
-                    <img class="episode-img" src="../img/anime/episodes/jujus2.webp">
+                  <picture class="episode-img"> 
+                    <source type="image/webp" media="(max-width: 435px)" srcset="../img/anime/episodes/jujus2_more_low.webp">
+                    <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/episodes/jujus2_low.webp">
+                    <img src="../img/anime/episodes/jujus2.webp">
+                  </picture>
                     <div class="texts-episode">
                         <p class="title-episode">Jujutsu Kaisen Season 2</p>
                         <p class="num-episode">Episode 1</p>
+                        <div class="more-details">
+                          <p class="more-text">Subtitulado</p>
+                          <p class="duration-cap">24:40</p>
+                        </div>
+                        <div class="repro ocultacion">
+                          <a href="#" class="icon-play">
+                            <i class="bi bi-play-circle"></i>
+                          </a>
+                          <p class="rep-ep">REPRODUCIR E1</p>
+                        </div>
                     </div>
                 </div>
                 <div class="episode">
-                    <img class="episode-img" src="../img/anime/episodes/land.webp">
+                  <picture class="episode-img"> 
+                    <source type="image/webp" media="(max-width: 435px)" srcset="../img/anime/episodes/land_more_low.webp">
+                    <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/episodes/land_low.webp">
+                    <img src="../img/anime/episodes/land.webp">
+                  </picture>
                     <div class="texts-episode">
                         <p class="title-episode">Land of the Lustrous</p>
                         <p class="num-episode">Episode 1</p>
+                        <div class="more-details">
+                          <p class="more-text">Subtitulado</p>
+                          <p class="duration-cap">23:10</p>
+                        </div>
+                        <div class="repro ocultacion">
+                          <a href="#" class="icon-play">
+                            <i class="bi bi-play-circle"></i>
+                          </a>
+                          <p class="rep-ep">REPRODUCIR E1</p>
+                        </div>
                     </div>
                 </div>
             </aside>
             <h3 class="adverb">Yesterday</h3>
             <aside class="yesterday">
-                <div class="episode primerito">
-                    <img class="episode-img" src="../img/anime/episodes/blue.webp">
+                <div class="episode">
+                  <picture class="episode-img"> 
+                    <source type="image/webp" media="(max-width: 435px)" srcset="../img/anime/episodes/blue_more_low.webp">
+                    <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/episodes/blue_low.webp">
+                    <img src="../img/anime/episodes/blue.webp">
+                  </picture>
                     <div class="texts-episode">
                         <p class="title-episode">Blue Lock</p>
                         <p class="num-episode">Episode 1</p>
+                        <div class="more-details">
+                          <p class="more-text">Subtitulado</p>
+                          <p class="duration-cap">22:00</p>
+                        </div>
+                        <div class="repro ocultacion">
+                          <a href="#" class="icon-play">
+                            <i class="bi bi-play-circle"></i>
+                          </a>
+                          <p class="rep-ep">REPRODUCIR E1</p>
+                        </div>
                     </div>
                 </div>
                 <div class="episode">
-                    <img class="episode-img" src="../img/anime/episodes/code.webp">
+                  <picture class="episode-img"> 
+                    <source type="image/webp" media="(max-width: 435px)" srcset="../img/anime/episodes/code_more_low.webp">
+                    <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/episodes/code_low.webp">
+                    <img src="../img/anime/episodes/code.webp">
+                  </picture>
                     <div class="texts-episode">
                         <p class="title-episode">Code Geass</p>
                         <p class="num-episode">Episode 1</p>
+                        <div class="more-details">
+                          <p class="more-text">Subtitulado</p>
+                          <p class="duration-cap">24:20</p>
+                        </div>
+                        <div class="repro ocultacion">
+                          <a href="#" class="icon-play">
+                            <i class="bi bi-play-circle"></i>
+                          </a>
+                          <p class="rep-ep">REPRODUCIR E1</p>
+                        </div>
                     </div>
                 </div>
                 <div class="episode">
-                    <img class="episode-img" src="../img/anime/episodes/berserk.webp">
+                  <picture class="episode-img"> 
+                    <source type="image/webp" media="(max-width: 435px)" srcset="../img/anime/episodes/berserk_more_low.webp">
+                    <source type="image/webp" media="(max-width: 575px)" srcset="../img/anime/episodes/berserk_low.webp">
+                    <img src="../img/anime/episodes/berserk.webp">
+                  </picture>
                     <div class="texts-episode">
                         <p class="title-episode">Berserk</p>
                         <p class="num-episode">Episode 1</p>
+                        <div class="more-details">
+                          <p class="more-text">Subtitulado</p>
+                          <p class="duration-cap">25:10</p>
+                        </div>
+                        <div class="repro ocultacion">
+                          <a href="#" class="icon-play">
+                            <i class="bi bi-play-circle"></i>
+                          </a>
+                          <p class="rep-ep">REPRODUCIR E1</p>
+                        </div>
                     </div>
                 </div>
             </aside>
@@ -219,27 +317,27 @@
       <ul class="frame-new-manga">
         
         <li class="cards">
-          <img class="img-new-title" src="../img/anime/carrousel/spy.webp"/>
+          <img class="img-new-title" src="../img/anime/carrousel/spy_low.webp"/>
           <p class="text-new-title">SPY x FAMILY</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="../img/anime/carrousel/buddy.webp"/>
+          <img class="img-new-title" src="../img/anime/carrousel/buddy_low.webp"/>
           <p class="text-new-title">Buddy Daddies</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="../img/anime/carrousel/chainsaw.webp"/>
+          <img class="img-new-title" src="../img/anime/carrousel/chainsaw_low.webp"/>
           <p class="text-new-title">Chainsaw Man</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="../img/anime/carrousel/fairy.webp"/>
+          <img class="img-new-title" src="../img/anime/carrousel/fairy_low.webp"/>
           <p class="text-new-title">Fairy Tail - F.S.</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="../img/anime/carrousel/Gintama.webp"/>
+          <img class="img-new-title" src="../img/anime/carrousel/gintama_low.webp"/>
           <p class="text-new-title">Gintama</p>
         </li>
         <li class="cards">
-          <img class="img-new-title" src="../img/anime/carrousel/naruto.webp"/>
+          <img class="img-new-title" src="../img/anime/carrousel/naruto_low.webp"/>
           <p class="text-new-title">Naruto</p>
         </li>
         

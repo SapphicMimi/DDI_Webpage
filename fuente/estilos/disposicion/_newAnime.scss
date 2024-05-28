@@ -7,7 +7,15 @@
 .yesterday,
 .today {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mixinMediaQueryWidth(mqW18) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mixinMediaQueryWidth(mqW16) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .episode {
@@ -16,5 +24,20 @@
 
 .texts-episode {
     display: flex;
+
     flex-direction: column;
+
+    justify-content: center;
+}
+
+.more-details{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.repro {
+    display: flex;
+
+    align-items: center;
 }
