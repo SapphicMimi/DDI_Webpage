@@ -1,0 +1,61 @@
+.section-updates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frame-update {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @include mixinMediaQueryWidth(mqW21) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    @include mixinMediaQueryWidth(mqW22) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include mixinMediaQueryWidth(mqW4) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.cont-update {
+    display: grid;
+}
+
+.manga-update {
+    display: flex;
+}
+
+.manga-update-texts {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.manga-update-title {
+    display: -webkit-box;
+}
+
+.manga-update-cont-chapter {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.manga-update-chapter {
+    display: -webkit-box;
+}
+
+.manga-update-cont-author {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.manga-update-author {
+    display: -webkit-box;
+}

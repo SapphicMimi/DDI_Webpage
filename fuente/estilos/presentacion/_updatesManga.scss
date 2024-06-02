@@ -1,0 +1,123 @@
+.section-updates {
+    background-color: $white;
+}
+
+.frame-update {
+    width: 1550px;
+
+    column-gap: 1.5rem;
+    margin-bottom: -0.5%;
+
+    @include mixinMediaQueryWidth(mqW20) {
+        width: 94%;
+    }
+}
+
+.cont-update {
+    padding: 16px;
+    gap: 16px;
+
+    background-color: $black;
+    border-radius: 10px;
+}
+
+.ocult-first {
+    @include mixinMediaQueryWidth(mqW21) {
+        display: none;
+    }
+}
+
+.ocult-second {
+    @include mixinMediaQueryWidth(mqW22) {
+        display: none;
+    }
+}
+
+.ocult-third {
+    @include mixinMediaQueryWidth(mqW4) {
+        display: none;
+    }
+}
+
+.manga-update {
+    gap: 1rem;
+}
+
+.manga-update-img {
+    width: 56px;
+    height: 80px;
+
+    object-fit: cover;
+}
+
+.manga-update-texts {
+    width: 100%;
+}
+
+.manga-update-title {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-family: $Lato;
+    font-weight: 900;
+    font-size: 18px;
+
+    color: $white;
+
+    letter-spacing: -0.36px;
+
+    margin-bottom: 2px;
+}
+
+.manga-update-chapter {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-family: $Lato;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: $white;
+
+    letter-spacing: -0.36px;
+    line-height: 22px;
+}
+
+.manga-update-icon {
+    font-size: 20px;
+
+    color: $white;
+}
+
+.manga-update-author {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    font-family: $Lato;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+
+    color: $white;
+
+    letter-spacing: -0.36px;
+    line-height: 22px;
+
+    i {
+        font-size: 22px;
+    }
+}
+
+.manga-update-time {
+    font-family: $Lato;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: $white;
+
+    letter-spacing: -0.36px;
+    line-height: 22px;
+}

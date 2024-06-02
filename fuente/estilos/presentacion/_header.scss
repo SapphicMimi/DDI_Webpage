@@ -39,7 +39,6 @@
     background-color: $pink;
     text-decoration: none;
     transition:.4s ease;
-
 }
 
 .user-functions {
@@ -49,8 +48,6 @@
 .search-bar {
     width: 260px;
     height: 40px;
-  
-    margin-top: 10.5px;
 
     background-color: $white;
     border-radius: 20px;
@@ -95,13 +92,15 @@
     margin-left: 20px;
 
     background-color: $grey_2;
-
     text-decoration: none;
-
     transition:.4s ease;
 
     &:hover {
         background-color: $pink;
+    }
+
+    @include mixinMediaQueryWidth(mqW6) {
+        margin-left: 0%;
     }
 }
 
@@ -116,6 +115,10 @@
   
     transition:.4s ease;
 
+    @include mixinMediaQueryWidth(mqW6) {
+        margin-left: 0%;
+    }
+
 }
 
 .sign-up-button {
@@ -125,13 +128,15 @@
     margin-right: 4%;
   
     background-color: $grey_2;
-
     text-decoration: none;
-
     transition:.4s ease;
 
     &:hover {
         background-color: $pink;
+    }
+
+    @include mixinMediaQueryWidth(mqW6) {
+        margin-right: 0%;
     }
 }
 
@@ -142,8 +147,10 @@
     margin-right: 4%;
     
     background-color: $pink;
-
     text-decoration: none;
-  
     transition:.4s ease;
+
+    @include mixinMediaQueryWidth(mqW6) {
+        margin-right: 0%;
+    }
 }

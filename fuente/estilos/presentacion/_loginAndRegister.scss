@@ -21,23 +21,24 @@
     }
 }
 
+
+
 .frame-lr {
-    margin-top: 1.5%;
+    margin-top: 2%;
 
     width: 30%;
 
-    border-radius: 18px;
+    border-radius: 10px;
     background-color: $grey_2;
 
     transition:.4s ease;
 
     @include mixinMediaQueryWidth(mqW18) {
-        margin-top: 0.5%;
         width: 34%;
     }
 
     @include mixinMediaQueryWidth(mqW3) {
-        margin-top: 2%;
+        margin-top: 1.5%;
         width: 40%;
     }
 
@@ -59,6 +60,10 @@
         width: 100%;
         background-color: $white;
     }
+}
+
+.more-margin-login {
+    margin-top: 6%;
 }
 
 .title-lr {
@@ -147,11 +152,11 @@
     font-family: $Lato;
     font-weight: 700;
 
-    color: $grey_2;
+    color: $black;
 
     border: 0px solid;
     border-radius: 40px;
-    background-color: $pink;
+    background-color: $white;
 
     transition:.4s ease;
 
@@ -164,6 +169,10 @@
     }
 
     @include mixinMediaQueryWidth(mqW11) {
+        font-size: 16px;
+
+        color: $white;
+
         background-color: $grey_2;
     }
 }
