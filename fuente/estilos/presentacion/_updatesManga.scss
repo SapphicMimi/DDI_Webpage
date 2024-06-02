@@ -34,7 +34,7 @@
 }
 
 .ocult-third {
-    @include mixinMediaQueryWidth(mqW4) {
+    @include mixinMediaQueryWidth(mqW11) {
         display: none;
     }
 }
@@ -55,7 +55,7 @@
 }
 
 .manga-update-title {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -71,7 +71,7 @@
 }
 
 .manga-update-chapter {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -92,7 +92,7 @@
 }
 
 .manga-update-author {
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 
@@ -112,6 +112,10 @@
 }
 
 .manga-update-time {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
     font-family: $Lato;
     font-weight: 400;
     font-size: 16px;
