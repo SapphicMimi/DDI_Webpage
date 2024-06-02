@@ -3,12 +3,14 @@ let imgs_manga = document.querySelector(".carrousel-manga");
 let titus_manga = document.querySelector(".titulos-manga");
 let descs_manga = document.querySelector(".descs-manga");
 let auts_manga = document.querySelector(".autores-manga");
+let backs_manga = document.querySelector(".background-manga");
 
 let botonp_manga;
 let img_manga;
 let titu_manga;
 let desc_manga;
 let aut_manga;
+let back_manga;
 
 for(let boton of botones_manga.querySelectorAll("button")) {
     boton.addEventListener("mouseenter", (evento) => {
@@ -45,12 +47,16 @@ for(let boton of botones_manga.querySelectorAll("button")) {
             aut_manga = aut;
         }
 
+        for(let back of backs_manga.getElementsByClassName("img-back")) {
+            back_manga = back;
+        }
+
         if(!(evento.target == botonp_manga)) {
             evento.target.classList.add("boton-pink");
-            evento.target.classList.remove("boton");
+            evento.target.classList.remove("boton-b");
 
             botonp_manga.classList.remove("boton-pink");
-            botonp_manga.classList.add("boton");
+            botonp_manga.classList.add("boton-b");
 
             imgs_manga.querySelector(".ocultacion:nth-child(" + cont + ")").classList.add("imagen-manga");
             imgs_manga.querySelector(".ocultacion:nth-child(" + cont + ")").classList.remove("ocultacion");
@@ -75,6 +81,12 @@ for(let boton of botones_manga.querySelectorAll("button")) {
 
             aut_manga.classList.add("ocultacion");
             aut_manga.classList.remove("autor");
+
+            backs_manga.querySelector(".ocultacion:nth-child(" + cont + ")").classList.add("img-back");
+            backs_manga.querySelector(".ocultacion:nth-child(" + cont + ")").classList.remove("ocultacion");
+
+            back_manga.classList.add("ocultacion");
+            back_manga.classList.remove("img-back");
         }
 
     })

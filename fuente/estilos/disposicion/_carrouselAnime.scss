@@ -1,10 +1,6 @@
 .section-anime-pc {
     display: flex; 
     flex-direction: column;
-
-    @include mixinMediaQueryWidth(mqW12) {
-        
-    }
 }
 
 .titulo{

@@ -44,43 +44,83 @@
     </nav>
     
     <section class="seccion-manga">
-      <h1 class="new-title">Recommended Titles</h1>
+      <div class="cont-title more-margin">
+        <h1 class="manga-title"><i class="bi bi-bookmark-star"></i> Recommended Titles</h1>
+      </div>
+
+      <div class="background-manga">
+        <img class="img-back" src="../img/manga/recommended/ore_low.webp"/>
+        <img class="ocultacion" src="../img/manga/recommended/zenbu_low.webp"/>
+        <img class="ocultacion" src="../img/manga/recommended/ushiro_low.webp"/>
+        <img class="ocultacion" src="../img/manga/recommended/onna_low.webp"/>
+        <img class="ocultacion" src="../img/manga/recommended/shanai_low.webp"/>
+        <img class="ocultacion" src="../img/manga/recommended/amasaya_low.webp"/>
+      </div>
+
       <article class="frame-manga">
         <aside class="carrousel-manga">
-          <img class="imagen-manga" src="../img/manga/carrousel/ushiro.webp"/>
-          <img class="ocultacion" src="../img/manga/carrousel/Zenbu.webp"/>
-          <img class="ocultacion" src="../img/manga/carrousel/existence.webp"/>
-          <img class="ocultacion" src="../img/manga/carrousel/morning.webp"/>
-          <img class="ocultacion" src="../img/manga/carrousel/shanai.webp"/>
-          <img class="ocultacion" src="../img/manga/carrousel/amasaya.webp"/>
+          <picture class="imagen-manga"> 
+            <source type="image/webp" media="(max-width: 765px)" srcset="../img/manga/carrousel/ore_xs.webp">
+            <source type="image/webp" media="(max-width: 1016px)" srcset="../img/manga/carrousel/ore_s.webp">
+            <img src="../img/manga/carrousel/ore_l.webp"/>
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 765px)" srcset="../img/manga/carrousel/zenbu_xs.webp">
+            <source type="image/webp" media="(max-width: 1016px)" srcset="../img/manga/carrousel/zenbu_s.webp">
+            <img src="../img/manga/carrousel/zenbu_l.webp"/>
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 765px)" srcset="../img/manga/carrousel/ushiro_xs.webp">
+            <source type="image/webp" media="(max-width: 1016px)" srcset="../img/manga/carrousel/ushiro_s.webp">
+            <img src="../img/manga/carrousel/ushiro_l.webp"/>
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 765px)" srcset="../img/manga/carrousel/onna_xs.webp">
+            <source type="image/webp" media="(max-width: 1016px)" srcset="../img/manga/carrousel/onna_s.webp">
+            <img src="../img/manga/carrousel/onna_l.webp"/>
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 765px)" srcset="../img/manga/carrousel/shanai_xs.webp">
+            <source type="image/webp" media="(max-width: 1016px)" srcset="../img/manga/carrousel/shanai_s.webp">
+            <img src="../img/manga/carrousel/shanai_l.webp"/>
+          </picture>
+          <picture class="ocultacion"> 
+            <source type="image/webp" media="(max-width: 765px)" srcset="../img/manga/carrousel/amasaya_xs.webp">
+            <source type="image/webp" media="(max-width: 1016px)" srcset="../img/manga/carrousel/amasaya_s.webp">
+            <img src="../img/manga/carrousel/amasaya_l.webp"/>
+          </picture>
         </aside>
         <aside class="textos">
           <div class="titulos-manga">
-            <p class="titulo-manga">Ushiro no Seki no Gyaru ni Sukarete Shimatta</p>
+            <p class="titulo-manga">Ore no Kurasu ni Wakagaetta Moto Yome ga Iru</p>
             <p class="ocultacion">Zenbu Osake no Sei ni Shite</p>
-            <p class="ocultacion">She Has Become a Distant Existence</p>
-            <p class="ocultacion">They Are Still Being Shaken This Morning.</p>
+            <p class="ocultacion">Ushiro no Seki no Gyaru ni Sukarete Shimatta. - Mou Ore wa Damekamoshirenai</p>
+            <p class="ocultacion">Onna Chara de Isekai Teni shite Cheatppoi kedo Zako Chara na no de Medatazu Heiwa na Shomin wo Mezashimasu!</p>
             <p class="ocultacion">Shanai System Subete Wanope shiteiru desu ka?</p>
             <p class="ocultacion">Amasaya</p>
           </div>
           <div class="descs-manga">
             <p class="desc-manga">
-              ¿Mi vida escolar ha cambiado drásticamente solo porque le gusto y apenas hablo?<br />Yuizaki Shino, una
-              de las chicas más bellas de la escuela...
+              On the way home after filing for divorce, Kohei Kurose is hit by a car and is transported back in time to his high school days!
+              <br />
+              Determined to enjoy his new life, he heads back to his high school, only to find his ex-wife, Yuzuka, there...?
             </p>
             <p class="ocultacion">
               Yo, que me reuní con mi ex compañero de clase Hajime Aosaki en un pub, me convertí en compañero de bebida 
               con ella. Mientras la cuidaba, que es una mala borracha, ¡¿hoy se desarrolló una situación inesperada...?!
             </p>
             <p class="ocultacion">
-              Una vez ella fue su amiga de la infancia y solía salir con él todo el tiempo. Ahora ella es una ídolo 
-              televisiva reconocida a nivel nacional y todavía sale con él todo el tiempo. ¡Una existencia tan lejana, 
-              está en otra realidad!
+              My school life has changed drastically just because she likes me that I barely talk with?!
+              <br />
+              Yuizaki Shino, one of the most beautiful girls in the school is a classmate of Fujiwara Sandai sitting behind him. 
+              It was only on a whim that Sandai helped her out despite spent his days studying and not having a single friend. 
+              It was supposed to be―
             </p>
             <p class="ocultacion">
-              Esta es la típica historia de un chico que está enamorado en secreto de una chica, ambos comparten un viaje
-               de 20 minutos en el tren de cercanías camino a diferentes colegios, ¿podrá el chico acercarse a la chica y 
-               confesarle su amor? Y además...  
+              A little weary salaryman. One day, after waking up… he found himself in another world in the body of a female 
+              character, Susie, from the MMORPG he liked to play. Confused, he tried an attack… and made all the monsters flee 
+              to the place people live, afraid of his destructive power that’s able to smash a mountain. Having dealt with them, 
+              he ended up saving Howard, a local tribune who invited his savior to the village, but…
             </p>
             <p class="ocultacion">
               Satou Ai, que ha estado manejando el sistema interno de la compañía como un solo hombre, recibió una notificación 
@@ -92,20 +132,20 @@
           </div>
           <div class="bottom">
             <div class="autores-manga">
-              <p class="autor">Michinoku Koharu, Suya Maromi</p>
+              <p class="autor">Nekomata Nuko, aknbou</p>
               <p class="ocultacion">Nikumaru</p>
-              <p class="ocultacion">Kiyu Fuyuki</p>
-              <p class="ocultacion">Masuda Eiji</p>
+              <p class="ocultacion">Michinoku Koharu, Suya Maromi</p>
+              <p class="ocultacion">ＴＡ☆ＫＡ, Kanida Nobi</p>
               <p class="ocultacion">Io (伊於), Kashirome Yuki</p>
-              <p class="ocultacion">すとろべりぃ</p>
+              <p class="ocultacion">Strawberry (すとろべりぃ)</p>
             </div>
             <div class="botones-manga">
               <button class="boton-pink"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
-              <button class="boton"></button>
+              <button class="boton-b"></button>
+              <button class="boton-b"></button>
+              <button class="boton-b"></button>
+              <button class="boton-b"></button>
+              <button class="boton-b"></button>
             </div>
           </div>
         </aside>
@@ -113,7 +153,10 @@
     </section>
 
     <section class="section-updates" id="updates">
-      <h1 class="new-title">Last Updates</h1>
+      <div class="cont-title not-cards">
+        <h1 class="new-title"><i class="bi bi-bookmark-plus"></i> Last Updates</h1>
+      </div>
+      
       <article class="frame-updates">
         
         <div class="cont-manga">
@@ -168,9 +211,19 @@
     </section>
 
     <section class="seccion-new-manga">
-      <h2 class="new-title">New Manga Titles</h2>
-      <div id="flecha_izq" class="flecha-izquierda arrow">
-        <i class="bi bi-arrow-left-circle-fill"></i>
+      <div class="cont-title">
+        <h2 class="new-title">New Manga Titles</h2>
+        <div class="des-button">
+          <div id="flecha_izq" class="flecha arrow">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+          </div>
+
+          <div class="figure"></div>
+
+          <div id="flecha-der" class="flecha arrow">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </div>
+        </div>
       </div>
       <ul class="frame-new-manga">
         
@@ -200,9 +253,6 @@
         </li>
         
       </ul>
-      <div id="flecha-der" class="flecha-derecha arrow">
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </div>
     </section>
 
     <footer class="footer">

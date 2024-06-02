@@ -6,7 +6,7 @@
 
     <title>Home Page - Tokyo Archive</title>
     
-    <link rel="stylesheet" href="estilos/principal.scss" />
+    <link rel="stylesheet" href="estilos/principal.css" />
 
     <script src="js/cards.js" defer></script>
     <script src="js/menu.js" defer></script>
@@ -200,10 +200,21 @@
     </section>
 
     <section class="seccion-new-manga">
-      <h2 class="new-title">New Manga</h2>
-      <div id="flecha_izq" class="flecha-izquierda arrowManga">
-        <i class="bi bi-arrow-left-circle-fill"></i>
+      <div class="cont-title">
+        <h2 class="new-title">New Manga</h2>
+        <div class="des-button">
+          <div id="flecha_izq" class="flecha arrow">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+          </div>
+
+          <div class="figure"></div>
+
+          <div id="flecha-der" class="flecha arrow">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </div>
+        </div>
       </div>
+
       <ul class="frame-new-manga">
         <li class="cards">
           <img class="img-new-title first" src="img/manga/new titles/spyxfamily.webp"/>
@@ -230,18 +241,26 @@
           <p class="text-new-title">Girls’ Last Tour</p>
         </li>
       </ul>
-      <div id="flecha-der" class="flecha-derecha arrowManga">
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </div>
+
     </section>
 
     <section class="seccion-new-anime">
-      <h2 class="new-title">New Animes</h2>
-      <div id="flecha_izq" class="flecha-izquierda arrowAnime">
-        <i class="bi bi-arrow-left-circle-fill"></i>
+      <div class="cont-title">
+        <h2 class="new-title">New Animes</h2>
+        <div class="des-button">
+          <div id="flecha_izq" class="flecha arrow">
+            <i class="bi bi-arrow-left-circle-fill"></i>
+          </div>
+
+          <div class="figure"></div>
+
+          <div id="flecha-der" class="flecha arrow">
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </div>
+        </div>
       </div>
+      
       <ul class="frame-new-anime">
-        
         <li class="cards">
           <img class="img-new-title first" src="img/anime/carrousel/spy_low.webp"/>
           <p class="text-new-title">SPY x FAMILY</p>
@@ -268,9 +287,7 @@
         </li>
         
       </ul>
-      <div id="flecha-der" class="flecha-derecha arrowAnime">
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </div>
+
     </section>
 
     <footer class="footer">

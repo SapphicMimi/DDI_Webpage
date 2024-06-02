@@ -1,17 +1,27 @@
-.seccion-new-anime {
-    position: relative;
-}
-
+.seccion-new-anime,
 .seccion-new-manga {
     position: relative;
+
+    margin-top: 2%;
+}
+
+.cont-title {
+    margin-bottom: -0.5%;
+
+    width: 1550px;
+
+    @include mixinMediaQueryWidth(mqW20) {
+        width: 95%;
+    }
+
+    @include mixinMediaQueryWidth(mqW9) {
+        margin-bottom: -1%;
+    }
 }
   
 .new-title {
-    margin-top: 1.5%;
-    margin-left: 5%;
-  
     font-family: $Arvo;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 42px;
 
     color: $grey_2;
@@ -19,23 +29,19 @@
     letter-spacing: -0.5px;
     line-height: 40px;
 
+    right: 10px;
+
     @include mixinMediaQueryWidth(mqW2) {
         font-size: 34px;
         line-height: 34px;
-        margin-left: 6%;
     }
 
     @include mixinMediaQueryWidth(mqW9) {
         font-size: 32px;
         line-height: 32px;
-
-        margin-top: 3%;
-        margin-left: 6%;
     }
 
     @include mixinMediaQueryWidth(mqW12) {
-        margin-top: 4%;
-
         font-size: 32px;
     }
 
@@ -49,7 +55,15 @@
 
     i {
         font-size: 50px;
+
+        @include mixinMediaQueryWidth(mqW14) {
+            font-size: 40px;
+        }
     }
+}
+
+.not-cards {
+    margin-bottom: 0.5%;
 }
   
 .frame-new-anime, 
@@ -58,33 +72,14 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
+
+    width: 1550px;
   
-    width: 92%;
     background-color: $black;
-    border-radius: 25px;
+    border-radius: 10px;
 
-    @include mixinMediaQueryWidth(mqW9) {
-        border-radius: 20px;
-    }
-
-    @include mixinMediaQueryWidth(mqW1) {
-        width: 93%;
-    }
-
-    @include mixinMediaQueryWidth(mqW16) {
-        width: 92%;
-    }
-
-    @include mixinMediaQueryWidth(mqW8) {
-        width: 90%;
-    }
-
-    @include mixinMediaQueryWidth(mqW10) {
-        width: 88%;
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        width: 90%;
+    @include mixinMediaQueryWidth(mqW20) {
+        width: 95%;
     }
 }
   
@@ -108,12 +103,7 @@
     margin-right: 16%;
 }
   
-.flecha-izquierda {
-    top: 50%;
-    left: 0.5%;
-
-    position: absolute;
-    z-index: 3;
+.flecha {
 
     color: $grey_2;
   
@@ -128,50 +118,18 @@
             font-size: 40px;
         }
     }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        top: 5%;
-        left: 75%;
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        top: 5%;
-        left: 75%;
-    }
-}
-  
-.flecha-derecha {
-    top: 50%;
-    right: 0.5%;
-  
-    position: absolute;
-    z-index: 3;
-
-    color: $grey_2;
-  
-    i {
-        font-size: 55px;
-
-        @include mixinMediaQueryWidth(mqW2) {
-            font-size: 45px;
-        }
-        
-        @include mixinMediaQueryWidth(mqW13) {
-            font-size: 40px;
-        }
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        top: 5%;
-        left: 84%;
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        top: 5%;
-        left: 84%;
-    }
 }
 
+.figure {
+    height: 20px;
+    width: 10px;
+
+    border-radius: 10px;
+    background-color: $white;
+
+    margin-left: 3%;
+    margin-right: 3%;
+}
   
 .text-new-title {
     font-family: $Lato;

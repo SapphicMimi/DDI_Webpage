@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-.manga {
-    align-self: flex-start;
-}
-
 .frame-manga {
     display: flex;
 }
@@ -15,6 +11,14 @@
 .textos {
     display: flex;
     flex-direction: column;
+}
+
+.titulo-manga {
+    display: -webkit-box;
+}
+
+.desc-manga {
+    display: -webkit-box;
 }
 
 .bottom {
@@ -25,10 +29,4 @@
 
 .botones-manga {
     display: flex;
-}
-
-.desc-manga {
-    @include mixinMediaQueryWidth(mqW9) {
-        display: none;
-    }
 }
