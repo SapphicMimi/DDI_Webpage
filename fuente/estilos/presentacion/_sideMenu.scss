@@ -24,10 +24,17 @@
     i {
         font-size: 26px;
     }
+
+    @include mixinMediaQueryWidth(mqW12) {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
   
 .menu-desplegable {
     position: absolute;
+    /* Como menu desplegable que necesito que aparezca, necesito que tenga un orden muy superior para que se ponga delante de cualquier cosa que
+    tenga delante de la página. */
     z-index: 10;
     width: 30%;
     right: 0;

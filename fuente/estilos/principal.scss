@@ -1,10 +1,14 @@
+/* Fuentes a utilizar. */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:900,400,700,600|Arvo:400,700");
 
+/* Todos los archivos SCSS utilizandose. */
+/* Archivos SCSS más generales. */
 @import "../estilos/variables";
 @import "../estilos/global";
 @import "../estilos/mixins";
 
+/* Los que establecen su disposición. */
 @import "../estilos/disposicion/carrouselAnime";
 @import "../estilos/disposicion/newAnime";
 @import "../estilos/disposicion/footer";
@@ -16,6 +20,7 @@
 @import "../estilos/disposicion/loginAndRegister";
 @import "../estilos/disposicion/updatesManga";
 
+/* Los que establecen su estilo, diseño y presentacion. */
 @import "../estilos/presentacion/botones";
 @import "../estilos/presentacion/carrouselAnime";
 @import "../estilos/presentacion/newAnime";

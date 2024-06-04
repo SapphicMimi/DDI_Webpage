@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     height: 65px;
+
     background-color: $grey_2;
 }
 
@@ -15,16 +16,19 @@
 .logotype {
     width: 168px;
     height: 42px;
+
     margin-left: 3%;
     margin-right: 2%;
 }
 
+/* Estos son los botones de Manga y Anime. */
 .header-button {
     width: 80px;
     height: 65px;
     
     background-color: $grey_2;
     text-decoration: none;
+
     transition:.4s ease;
 
     &:hover {
@@ -32,12 +36,14 @@
     }
 }
 
+/* Estos mismos botones se les van a cambiar el color del fondo, cuando esten en su sección, para así resaltar que esta en esa sección. */
 .header-button-active {
     width: 80px;
     height: 65px;
     
     background-color: $pink;
     text-decoration: none;
+
     transition:.4s ease;
 }
 
@@ -50,16 +56,19 @@
     height: 40px;
 
     background-color: $white;
+
     border-radius: 20px;
     border: 1px solid;
     border-color: $grey_1;
 
+    /* Cuando llega a cierto punto de ruptura, el buscador se encoje y solo deja el icono de la lupa. */
     @include mixinMediaQueryWidth(mqW3) {
         width: 40px;
         height: 40px;
     }
 
-    // Si no pongo la media query aquí, no la coge.
+    /* Si no pongo la media query aquí, no la coge. Por alguna extraña razón. */
+    /* Como, con muchos elementos más, este se ocultará cuando llegue a cierto tamaño o punto de ruptura. */
     @include mixinMediaQueryWidth(mqW5) {
         display: none;
     }
@@ -93,6 +102,7 @@
 
     background-color: $grey_2;
     text-decoration: none;
+
     transition:.4s ease;
 
     &:hover {
@@ -104,6 +114,7 @@
     }
 }
 
+/* Este botón se le van a cambiar el color del fondo, para así resaltar que esta en esa sección. */
 .login-button-active {
     width: 80px;
     height: 65px;
@@ -140,6 +151,7 @@
     }
 }
 
+/* Este botón se le van a cambiar el color del fondo, para así resaltar que esta en esa sección. */
 .sign-up-button-active {
     width: 80px;
     height: 65px;

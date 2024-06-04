@@ -1,7 +1,13 @@
 .seccion-manga {
     display: flex;
+
     flex-direction: column;
     align-items: center;
+}
+
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
+.manga-title {
+    display: -webkit-box;
 }
 
 .frame-manga {
@@ -10,19 +16,23 @@
 
 .textos {
     display: flex;
+
     flex-direction: column;
 }
 
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
 .titulo-manga {
     display: -webkit-box;
 }
 
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
 .desc-manga {
     display: -webkit-box;
 }
 
 .bottom {
     display: flex;
+
     flex-direction: column;
     justify-content: end;
 }

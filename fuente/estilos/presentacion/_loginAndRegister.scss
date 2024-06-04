@@ -54,12 +54,16 @@
         width: 90%;
     }
 
+    /* Cuando llega a cierto punto de ruptura, el contenedor ocupa el 100%, y cambia su fondo al color blanco, ocultando la imagen
+    que había de fondo. */
     @include mixinMediaQueryWidth(mqW11) {
         width: 100%;
         background-color: $white;
     }
 }
 
+/* El login, al ser su contenedor más pequeño, puede estar más en el centro que el de registrarse, ya que este es más grande, 
+por lo que necesitará más margen para posicionarse más en el centro. */
 .more-margin-login {
     margin-top: 6%;
 }
@@ -81,6 +85,8 @@
         font-size: 28px;
     }
 
+    /* Cuando llega a cierto punto de ruptura, el fondo cambia al color blanco, por lo que le cambio el color de la letra
+    para hacerla visible. */
     @include mixinMediaQueryWidth(mqW11) {
         color: $grey_2;
         border-bottom: 3px solid $grey_2;
@@ -100,6 +106,8 @@
         font-size: 16px;
     }
 
+    /* Cuando llega a cierto punto de ruptura, el fondo cambia al color blanco, por lo que le cambio el color de la letra
+    para hacerla visible. */
     @include mixinMediaQueryWidth(mqW11) {
         color: $grey_2;
     }
@@ -123,6 +131,8 @@
         border-radius: 20px;
     }
 
+    /* Cuando llega a cierto punto de ruptura, el fondo cambia al color blanco, por lo que le cambio el color del input, 
+    y añado una sombra, para darle visibilidad. */
     @include mixinMediaQueryWidth(mqW11) {
         color: $grey_2;
         border-bottom: 3px solid $grey_2;
@@ -168,6 +178,8 @@
         font-size: 18px;
     }
 
+    /* Cuando llega a cierto punto de ruptura, el fondo cambia al color blanco, por lo que le cambio el color del boton, 
+    para que sea más visible. */
     @include mixinMediaQueryWidth(mqW11) {
         font-size: 16px;
 
@@ -188,6 +200,8 @@
 
     color: $pink;
 
+    /* Cuando llega a cierto punto de ruptura, el fondo cambia al color blanco, por lo que le cambio el color del texto, 
+    para que sea más visible. */
     @include mixinMediaQueryWidth(mqW11) {
         color: $grey_2;
     }

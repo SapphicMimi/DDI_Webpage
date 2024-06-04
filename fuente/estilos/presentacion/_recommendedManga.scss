@@ -2,11 +2,14 @@
     padding-top: 2%;
     padding-bottom: 2%;
     
+    /* A la sección entera le voy a poner un color de fondo blanco con un degradado que estara por encima de unas imagenes que también
+    estarán de fondo. */
     background-image: linear-gradient(to top, $white, transparent 300%);
 }
 
 .manga-title {
-    display: -webkit-box;
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -55,6 +58,7 @@
     width: 100%;
     
     position: absolute;
+    /* Para que se ponga detras de los elementos, le voy a dar un orden menor para que este atras. */
     z-index: -1;
 
     margin-top: -2%;
@@ -62,9 +66,12 @@
 
 .img-back {
     width: 100%;
+    /* La imagen que utilizaré, la asignaré una altura de 660px para que no utilice toda la altura de la imagen original. */
     height: 660px;
 
+    /* Utilizo object-fit: cover con el objetivo de que la imagen original no se deforme, o que ocupe el tamaño y altura que se le asigno. */
     object-fit: cover;
+    /* Utilizo object-position para posicionar la imagen un poco mas abajo de lo que la mostraría. */
     object-position: 0px 30%;
 }
 
@@ -75,13 +82,18 @@
 .imagen-manga {
 
     img {
+        /* A las imagenes de los mangas les voy a asignar un ancho y un alto, aunque las imagenes originales tengan unas dimesiones similares
+        solo para que sin importar las dimensiones de la imagen, siempre tenga las misma dimensiones. */
         width: 214px;
         height: 308px;
 
+        /* Utilizo object-fit: cover con el objetivo de que la imagen original no se deforme, o que ocupe el tamaño y altura que se le asigno. */
         object-fit: cover;
 
         border-radius: 10px;
 
+        /* Dependiendo de diferentes puntos de ruptura, voy a ir cambiando el tamaño de la imagen para que no ocupe mucho más en diferentes tamaños,
+        ya que al tener unas dimensiones fijas, estas no se van actualizando como si fueran porcentajes. */
         @include mixinMediaQueryWidth(mqW16) {
             width: 192px;
             height: 276px;
@@ -95,8 +107,12 @@
 }
 
 .frame-manga {
+    /* Este contenedor tiene un tamaño determinado, para no ocupar la totalidad de la pantalla, ya que ocuparía
+    toda la pantalla, cuando se puede comprimir. */
     width: 1550px;
 
+    /* Despues de cierto punto de ruptura, deja de tener un tamaño predeterminado, y empieza a ocupar un porcentaje,
+    que se puede ir reduciendo al ir reduciendo el tamaño de la pantalla. */
     @include mixinMediaQueryWidth(mqW20) {
         width: 94%;
     }
@@ -109,6 +125,8 @@
 }
 
 .titulo-manga {
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -138,12 +156,15 @@
 }
 
 .descs-manga {
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar las descripciones o sinopsis de los mangas. */
     @include mixinMediaQueryWidth(mqW9) {
         display: none;
     }
 }
 
 .desc-manga {
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -176,6 +197,7 @@
     margin-bottom: 0.5%;
 }
 
+/* Gracias a esta altura, el contenedor de los botones no se me descuadra dentro del contenedor mayor. */
 .botones-manga {
     height: 18px;
 }

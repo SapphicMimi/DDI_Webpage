@@ -1,12 +1,14 @@
 .seccion-new-manga,
 .seccion-new-anime {
     display: flex;
+
     flex-direction: column;
     align-items: center;
 }
 
 .cont-title {
     display: flex;
+
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -17,29 +19,14 @@
     align-items: center;
 }
 
-.frame-new-manga {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100%/5) - 30px);
-
-    @include mixinMediaQueryWidth(mqW3) {
-        grid-auto-columns: calc((100%/4) - 30px);
-    }
-
-    @include mixinMediaQueryWidth(mqW8) {
-        grid-auto-columns: calc((100%/3) - 30px);
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        grid-auto-columns: calc((100%/2) - 30px);
-    }
-}
-
+/* Frame o contenedor donde van a ir los carruseles con tarjetas, los cuales van a estar en grid, y van a tener 5 columnas. */
+.frame-new-manga, 
 .frame-new-anime {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100%/5) - 30px);
 
+    /* Dependiendo del tamaño de la pantalla, voy a ir cambiando el número de columnas. */
     @include mixinMediaQueryWidth(mqW3) {
         grid-auto-columns: calc((100%/4) - 30px);
     }

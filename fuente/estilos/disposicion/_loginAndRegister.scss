@@ -1,16 +1,19 @@
 .section-lr {
-    display: flex; 
+    display: flex;
+
     flex-direction: column;
     align-items: center;
 }
 
 .frame-lr  {
     display: flex; 
+
     flex-direction: column;
 }
 
 .field-lr {
     display: flex;
+
     flex-direction: column;
 }
 
@@ -21,6 +24,7 @@
 .img-lr {
     display: flex;
 
+    /* Va a llegar cierto punto de ruptura (de ancho), en el que voy a ocultar este elemento. */
     @include mixinMediaQueryWidth(mqW11) {
         display: none;
     }

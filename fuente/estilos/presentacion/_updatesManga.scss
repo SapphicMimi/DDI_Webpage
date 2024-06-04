@@ -1,13 +1,21 @@
 .section-updates {
+    /* Voy a necesitar que este contenedor o sección entera tenga el fondo de color blanco, debido a que la imagen de fondo de la sección
+    superior es más alta que la sección y se vería en esta. */
+    /* Esto lo hago así para poder utilizar una parte central o un poco superior de la imagen, sin tener que editarla y solo tapandola con
+    un fondo. */
     background-color: $white;
 }
 
 .frame-update {
+    /* Este contenedor tiene un tamaño determinado, para no ocupar la totalidad de la pantalla, ya que ocuparía
+    toda la pantalla, cuando se puede comprimir. */
     width: 1550px;
 
     column-gap: 1.5rem;
     margin-bottom: -0.5%;
 
+    /* Despues de cierto punto de ruptura, deja de tener un tamaño predeterminado, y empieza a ocupar un porcentaje,
+    que se puede ir reduciendo al ir reduciendo el tamaño de la pantalla. */
     @include mixinMediaQueryWidth(mqW20) {
         width: 94%;
     }
@@ -21,6 +29,9 @@
     border-radius: 10px;
 }
 
+/* Conforme van llegando puntos de ruptura, voy a ir reduciendo la cantidad de columnas que voy a ir mostrando, 
+pero eso no hace que esa columna se oculte, por lo que al mismo tiempo que quito columnas, las voy a ir ocultando 
+con los mismos puntos de ruptura. */
 .ocult-first {
     @include mixinMediaQueryWidth(mqW21) {
         display: none;
@@ -43,10 +54,13 @@
     gap: 1rem;
 }
 
+/* Como con las imagenes del carrusel del manga, voy a establecer a las imagenes un alto y un ancho, así aunque tengan
+dimensiones cercanas, se pongan las establecidas. */
 .manga-update-img {
     width: 56px;
     height: 80px;
 
+    /* Utilizo object-fit: cover con el objetivo de que la imagen original no se deforme, o que ocupe el tamaño y altura que se le asigno. */
     object-fit: cover;
 }
 
@@ -55,6 +69,8 @@
 }
 
 .manga-update-title {
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -71,6 +87,8 @@
 }
 
 .manga-update-chapter {
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -92,6 +110,8 @@
 }
 
 .manga-update-author {
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -112,6 +132,8 @@
 }
 
 .manga-update-time {
+    /* Gracias a la propiedad de line-clamp, puedo especificar cuantas lineas de texto puede tener el contenedor estar sustituirse por
+    puntos suspensivos y que no aumente el tamaño del contenedor por el texto. */
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;

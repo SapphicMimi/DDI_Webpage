@@ -1,11 +1,15 @@
 .section-updates {
     display: flex;
+
     flex-direction: column;
     align-items: center;
 }
 
 .frame-update {
     display: grid;
+
+    /* Para las actualizaciones de los mangas, lo he separado en 4 columnas en un principio, y segun va reduciendose el tamaño de la pantalla,
+    voy reduciendo la cantidad de columnas, hasta solo que quede una. */
     grid-template-columns: repeat(4, minmax(0, 1fr));
 
     @include mixinMediaQueryWidth(mqW21) {
@@ -36,6 +40,7 @@
     justify-content: space-evenly;
 }
 
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
 .manga-update-title {
     display: -webkit-box;
 }
@@ -43,9 +48,12 @@
 .manga-update-cont-chapter {
     display: flex;
     
+    /* Normalmente utilizo, la propiedad de space-between, para hacer que los dos elementos en el contenedor se ponga cada uno en una punta de este mismo, y asi
+    ocupar todo, o casi todo el espacio utilizado. */
     justify-content: space-between;
 }
 
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
 .manga-update-chapter {
     display: -webkit-box;
 }
@@ -53,13 +61,17 @@
 .manga-update-cont-author {
     display: flex;
     
+    /* Normalmente utilizo, la propiedad de space-between, para hacer que los dos elementos en el contenedor se ponga cada uno en una punta de este mismo, y asi
+    ocupar todo, o casi todo el espacio utilizado. */
     justify-content: space-between;
 }
 
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
 .manga-update-author {
     display: -webkit-box;
 }
 
+/* Uso display: -webkit-box para poder usar la propiedad de line-clamp, y así limitar las lineas de texto puede tener un contenedor. */
 .manga-update-time {
     display: -webkit-box;
 }

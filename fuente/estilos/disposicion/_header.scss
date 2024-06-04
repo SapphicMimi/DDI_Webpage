@@ -8,6 +8,7 @@
 }
 
 .buscador {
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
     @include mixinMediaQueryWidth(mqW3) {
         display: none;
     }
@@ -19,9 +20,11 @@
 
 .header-button {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
     @include mixinMediaQueryWidth(mqW6) {
         display: none;
     }
@@ -29,9 +32,12 @@
 
 .header-button-active {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
+    /* Al ser el botón activo, o es decir, el botón que va a resaltar, voy a tardar más en ocultarlo. */
     @include mixinMediaQueryWidth(mqW13) {
         display: none;
     }
@@ -39,9 +45,11 @@
 
 .login-button {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
     @include mixinMediaQueryWidth(mqW6) {
         display: none;
     }
@@ -49,9 +57,12 @@
 
 .login-button-active {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
+    /* Al ser el botón activo, o es decir, el botón que va a resaltar, voy a tardar más en ocultarlo. */
     @include mixinMediaQueryWidth(mqW13) {
         display: none;
     }
@@ -62,6 +73,7 @@
     flex-direction: column;
     justify-content: center;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
     @include mixinMediaQueryWidth(mqW6) {
         display: none;
     }
@@ -72,6 +84,8 @@
     flex-direction: column;
     justify-content: center;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar este elemento. */
+    /* Al ser el botón activo, o es decir, el botón que va a resaltar, voy a tardar más en ocultarlo. */
     @include mixinMediaQueryWidth(mqW13) {
         display: none;
     }
@@ -86,6 +100,7 @@
 
 .search-bar {
     display: flex;
+    
     align-items: center;
 }
 

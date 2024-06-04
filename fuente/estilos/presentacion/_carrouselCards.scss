@@ -6,10 +6,17 @@
 }
 
 .cont-title {
+    /* Este contenedor va a tener las flechas de desplazamiento de los carruseles, los cuales por fines esteticos,
+    quiero que entren dentro del contenedor que va a tener debajo. */
     margin-bottom: -0.5%;
 
+    /* Este contenedor tiene un tamaño determinado, para no ocupar la totalidad de la pantalla, ya que ocuparía
+    toda la pantalla, cuando se puede comprimir. */
     width: 1550px;
 
+    
+    
+    
     @include mixinMediaQueryWidth(mqW20) {
         width: 95%;
     }
@@ -28,8 +35,6 @@
     
     letter-spacing: -0.5px;
     line-height: 40px;
-
-    right: 10px;
 
     @include mixinMediaQueryWidth(mqW2) {
         font-size: 34px;
@@ -53,6 +58,7 @@
         font-size: 30px;
     }
 
+    /* Tamaño de los iconos de desplazamiento. */
     i {
         font-size: 50px;
 
@@ -62,6 +68,8 @@
     }
 }
 
+/* Utilizo la propiedad de new-title para otros titulos de otras secciones, y como esos titulos no tienen iconos,
+necesito quitarles el margin-bottom que le quito. */
 .not-cards {
     margin-bottom: 0.5%;
 }
@@ -69,21 +77,28 @@
 .frame-new-anime, 
 .frame-new-manga {
     overflow-x: auto;
+    /* Indica que el desplazamiento debe ser horizontal y que se muestren las tarjetas o imagenes. */
     scroll-snap-type: x mandatory;
+    /* Hace que el desplazamiento sea suave al pasar de tarjeta o imagen. */
     scroll-behavior: smooth;
     scrollbar-width: none;
 
+    /* Este contenedor tiene un tamaño determinado, para no ocupar la totalidad de la pantalla, ya que ocuparía
+    toda la pantalla, cuando se puede comprimir. */
     width: 1550px;
   
     background-color: $black;
     border-radius: 10px;
 
+    /* Despues de cierto punto de ruptura, deja de tener un tamaño predeterminado, y empieza a ocupar un porcentaje,
+    que se puede ir reduciendo al ir reduciendo el tamaño de la pantalla. */
     @include mixinMediaQueryWidth(mqW20) {
         width: 95%;
     }
 }
   
 .cards {
+    /* Hace que siempre se muestra una tarjeta o imagen entera al deslizarse. */
     scroll-snap-align: start;
     list-style: none;
   
@@ -98,13 +113,8 @@
         width: 110%;
     }
 }
-
-.last {
-    margin-right: 16%;
-}
   
 .flecha {
-
     color: $grey_2;
   
     i {
@@ -120,6 +130,7 @@
     }
 }
 
+/* Esta propiedad añade un espacio, en este caso en blanco, entre las dos flechas de desplazamiento. */
 .figure {
     height: 20px;
     width: 10px;
@@ -146,6 +157,7 @@
     margin-bottom: -10%;
     margin-top: 4%;
 
+    /* Va a llegar cierto punto de ruptura, en el que voy a ocultar el titulo de las obras. */
     @include mixinMediaQueryWidth(mqW12) {
         display: none;
     }

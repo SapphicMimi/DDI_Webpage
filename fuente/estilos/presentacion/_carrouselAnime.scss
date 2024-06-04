@@ -1,13 +1,14 @@
+/* Este contenedor va a contener las imagenes que se van a usar de fondo en la página de inicio y manga en su primera sección. */
 .contenedor-carrousel {
     width: 100%;
     height: auto;
+
     position: relative;
-    z-index: -1;
+    /* Para que se ponga detras de los elementos, le voy a dar un orden menor para que este atras. */
+    z-index: -1; 
 }
   
 .carrousel {
-    max-height: 100%;
-
     img {
         width: 100%;
         height: auto;
@@ -20,7 +21,10 @@
   
 .anime {
     width: 90%;
+
     position: absolute;
+
+    /* Como las imagenes del fondo van a tener un orden menor, el contenedor que va a estar por encima, va a tener un orden mayor. */
     z-index: 0;
 
     @include mixinMediaQueryWidth(mqW12) {
@@ -61,6 +65,8 @@
         font-size: 40px;
     }
 
+    /* Cuando llega al punto de ruptura del tamaño del móvil, al titulo lo cambio de lugar, posicionandolo arriba a la izquierda,
+    añadiendole un color de fondo para que se distinga de las imagenes de fondo para el movil. */
     @include mixinMediaQueryWidth(mqW12) {
         font-size: 45px;
         
@@ -70,10 +76,9 @@
     
         align-self: flex-start;
 
-        background: $grey_2;
+        background: $black;
 
         padding: 3%;
-        
     }
 
     @include mixinMediaQueryWidth(mqW13) {
@@ -82,58 +87,21 @@
         margin-bottom: 64%;
     }
 }
-
-.titulo-anime-ex {
-    margin-top: 3.334%;
-    margin-left: 5.556%;
-  
-    font-family: $Arvo;
-    font-weight: 700;
-    font-size: 58px;
-
-    color: $grey_3;
-
-    letter-spacing: -0.5px;
-    line-height: 50px;
-
-    @include mixinMediaQueryWidth(mqW2) {
-        font-size: 40px;
-        line-height: 36px;
-        margin-left: 6.5%;
-    }
-
-    @include mixinMediaQueryWidth(mqW9) {
-        font-size: 34px;
-        line-height: 36px;
-        margin-left: 7%;
-    }
-
-    @include mixinMediaQueryWidth(mqW12) {
-        margin-left: 7%;
-        margin-bottom: 88%;
-    
-        align-self: flex-start;
-    }
-
-    @include mixinMediaQueryWidth(mqW13) {
-        margin-bottom: 80%;
-    }
-
-    @include mixinMediaQueryWidth(mqW19) {
-        font-size: 28px;
-    }
-}
   
 .frame {
     width: 40%;
-    border-radius: 39px;
-    background: linear-gradient(180deg, rgb(236, 236, 236) 50%, rgba(236, 236, 236, 0) 100%);
+
     margin-left: 3%;
+
+    border-radius: 39px;
+    /* El fondo del contenedor, en vez de ser de un color, le añado un degardado. */
+    background: linear-gradient(180deg, rgb(236, 236, 236) 50%, rgba(236, 236, 236, 0) 100%);
 
     @include mixinMediaQueryWidth(mqW9) {
         border-radius: 20px;
     }
 
+    /* En el punto de ruptura del tamaño de la pantalla de móvil, cambio su tamaño, a que ocupe el 100%, y le quito su fondo. */
     @include mixinMediaQueryWidth(mqW12) {
         width: 100%;
         height: 100%;
@@ -159,18 +127,21 @@
 }
   
 .titulo {
+    width: 100%;
+
     padding-top: 4%;
     padding-bottom: 4%;
-    width: 100%;
-  
-    flex-shrink: 0;
 }
 
+/* Esta propiedad es utilizada solo en la página de Inicio. */
+/* Le da forma al contenedor que va a tener el texto donde va a indicar si la obra mostrada pertenece al Anime o al Manga. */
 .pertenece {
     width: 84%;
+
     padding-bottom: 2%;
 }
-  
+
+/* Esta propiedad es utilizada solo en la página de Inicio. */
 .observable  {
     font-family: $Lato;
     font-weight: 900;
@@ -184,17 +155,15 @@
         font-size: 10px;
     }
 
+    /* Al contrario que las descripciones o sinopsis, estos textos, se ocultan más tarde, cuando llegua al punto de ruptura de la pantalla de móvil. */
     @include mixinMediaQueryWidth(mqW12) {
         display: none;
     }
 }
 
-.remarcado {
-    font-weight: 900;
-}
-
 .descripciones {
     width: 84%;
+
     padding-bottom: 2%;
 }
   
@@ -221,6 +190,7 @@
 
 .botones-caja {
     width: 40%;
+    
     padding-top: 2%;
     padding-bottom: 2%;
 }

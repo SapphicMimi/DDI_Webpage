@@ -2,9 +2,11 @@
     text-align: right;
 }
 
+/* En un principio, el icono, o simplemente el menu lateral no tiene que ser visible ya que estaran los demas botones disponibles. */
 .menu {
     display: none;
 
+    /* Después de cierto punto de ruptura, hago que el menu se haga visible. */
     @include mixinMediaQueryWidth(mqW6) {
         display: block;
     }

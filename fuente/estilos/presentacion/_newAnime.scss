@@ -5,6 +5,8 @@
 }
 
 .frame-sec-new-anime {
+    /* Este contenedor tiene un tamaño determinado, para no ocupar la totalidad de la pantalla, ya que ocuparía
+    toda la pantalla, cuando se puede comprimir. */
     width: 1550px;
 
     padding-top: 0.5%;
@@ -15,6 +17,8 @@
 
     grid-column-gap: 6px;
     
+    /* Despues de cierto punto de ruptura, deja de tener un tamaño predeterminado, y empieza a ocupar un porcentaje,
+    que se puede ir reduciendo al ir reduciendo el tamaño de la pantalla. */
     @include mixinMediaQueryWidth(mqW20) {
         width: 95%;
     }
@@ -82,11 +86,15 @@
     }
 }
 
+/* Tiene un tamaño automatico, debido a que las imagenes, ademas de tener ya un tamaño especifico, se van a ir controlando desde el html. */
+.episode-img {
+    width: auto;
+}
+
 .texts-episode {
     width: 100%;
 
     margin-left: 2%;
-    
 }
 
 .title-episode {
@@ -130,10 +138,6 @@
     @include mixinMediaQueryWidth(mqW13) {
         font-size: 14px;
     }
-}
-
-.episode-img {
-    width: auto;
 }
 
 .more-details {

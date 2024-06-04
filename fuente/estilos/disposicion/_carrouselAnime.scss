@@ -1,10 +1,12 @@
 .section-anime-pc {
     display: flex; 
+
     flex-direction: column;
 }
 
 .titulo{
     display: flex;
+
     justify-content: center;
 }
 
@@ -29,6 +31,7 @@
 
 .anime {
     display: flex;
+
     flex-direction: column;
 
     @include mixinMediaQueryWidth(mqW12) {
@@ -38,6 +41,7 @@
 
 .frame {
     display: flex;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -47,13 +51,11 @@
     }
 }
 
+/* Propiedad utilizada en el Carrousel de la Página de Inicio, dandole forma a los textos que indican a que pertenece la obra mostrada. */
 .pertenece {
     display: flex;
-    justify-content: center;
-}
 
-.observable  {
-    text-align: center;
+    justify-content: center;
 }
 
 .descripciones {
@@ -64,15 +66,18 @@
 .description  {
     text-align: center;
 
+    /* Despues de cierto tamaño, oculto las descripciones o sinopsis para ocupar menos espacio y dejar solo el título. */
     @include mixinMediaQueryWidth(mqW1) {
         display: none;
     }
 }
 
 .botones {
+    /* En el contenedor inicial, necesito alinear los botones a la izquierda y al final. */
     justify-self: start;
     align-items: end;
 
+    /* Despues al cambiarse a la resolución de móvil, ya no necesito que esten pegados a la izquierda, y los necesito en medio y debajo de los titulos. */
     @include mixinMediaQueryWidth(mqW12) {
         display: flex;
         justify-content: center
@@ -86,10 +91,4 @@
 
 .img-play {
     display: flex;
-    justify-self: flex-end;
-}
-
-.botones-caja {
-    display: flex;
-    justify-content: center;
 }

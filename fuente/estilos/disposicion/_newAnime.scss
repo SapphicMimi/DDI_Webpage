@@ -1,5 +1,6 @@
 .sec-new-anime {
     display: flex;
+
     flex-direction: column;
     align-items: center;
 }
@@ -7,8 +8,11 @@
 .yesterday,
 .today {
     display: grid;
+
+    /* En un principio, no voy a establecer cuantas columnas voy a hacer perse, si no por tamaño, que pueden llegar a ocupar. */
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 
+    /* Llegado cierto punto de ruptura, voy a hacer que en vez de ir por tamaño, va a volver a ser por columnas, y esta vez solo una. */
     @include mixinMediaQueryWidth(mqW11) {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -22,13 +26,14 @@
     display: flex;
 
     flex-direction: column;
-
     justify-content: center;
 }
 
 .more-details{
     display: flex;
 
+    /* Normalmente utilizo, la propiedad de space-between, para hacer que los dos elementos en el contenedor se ponga cada uno en una punta de este mismo, y asi
+    ocupar todo, o casi todo el espacio utilizado. */
     justify-content: space-between;
 }
 
