@@ -1,3 +1,5 @@
 # DDI_Webpage
 
-Hosting de la página web: https://tokyoarchive.000webhostapp.com/index.html
+Hosting de la Página en InfinityFree
+
+Enlace de la Página web: http://tokyo-archive.infinityfreeapp.com/
