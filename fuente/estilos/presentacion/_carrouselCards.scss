@@ -12,10 +12,7 @@
 
     /* Este contenedor tiene un tamaño determinado, para no ocupar la totalidad de la pantalla, ya que ocuparía
     toda la pantalla, cuando se puede comprimir. */
-    width: 1550px;
-
-    
-    
+    width: 1550px;    
     
     @include mixinMediaQueryWidth(mqW20) {
         width: 95%;

@@ -125,7 +125,7 @@
     font-weight: 400;
     font-size: 17px;
 
-    color: $grey_1;
+    color: $pink;
 
     letter-spacing: -0.16px;
     line-height: 25.6px;
@@ -149,7 +149,7 @@
     font-weight: 400;
     font-size: 17px;
 
-    color: $grey_1;
+    color: $pink;
 
     letter-spacing: -0.16px;
     line-height: 25.6px;
@@ -191,18 +191,22 @@
 }
 
 .icon-play {
-    font-size: 45px;
-
-    color: $pink;
+    font-size: 0px;
 
     margin-right: 2%;
 
-    @include mixinMediaQueryWidth(mqW9) {
-        font-size: 35px;
-    }
+    i {
+        font-size: 45px;
 
-    @include mixinMediaQueryWidth(mqW13) {
-        font-size: 25px;
+        color: $pink;
+
+        @include mixinMediaQueryWidth(mqW9) {
+            font-size: 35px;
+        }
+
+        @include mixinMediaQueryWidth(mqW13) {
+            font-size: 25px;
+        }
     }
 }
 

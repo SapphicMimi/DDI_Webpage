@@ -8,6 +8,8 @@
     border: solid 0px;
 
     margin-right: 1%;
+
+    font-size: 0px;
 }
 
 /* Estilo de los botones que se utilizan en la página de manga, ya que los botones normales son un gris que no se diferencia
@@ -21,6 +23,10 @@ del blanco que se utiliza en la página de manga, por eso, estos botones son del
     border: solid 0px;
 
     margin-right: 1%;
+
+    font-size: 0px;
+
+    color: $white;
 }
   
 .boton-pink {
@@ -32,4 +38,6 @@ del blanco que se utiliza en la página de manga, por eso, estos botones son del
     border: solid 0px;
 
     margin-right: 1%;
+
+    font-size: 0px;
 }

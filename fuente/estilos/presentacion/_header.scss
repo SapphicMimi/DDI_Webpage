@@ -33,6 +33,8 @@
 
     &:hover {
         background-color: $pink;
+
+        color: $black;
     }
 }
 
@@ -45,6 +47,8 @@
     text-decoration: none;
 
     transition:.4s ease;
+
+    color: $black;
 }
 
 .user-functions {
@@ -107,6 +111,8 @@
 
     &:hover {
         background-color: $pink;
+
+        color: $black;
     }
 
     @include mixinMediaQueryWidth(mqW6) {
@@ -126,10 +132,11 @@
   
     transition:.4s ease;
 
+    color: $black;
+
     @include mixinMediaQueryWidth(mqW6) {
         margin-left: 0%;
     }
-
 }
 
 .sign-up-button {
@@ -144,6 +151,8 @@
 
     &:hover {
         background-color: $pink;
+
+        color: $black;
     }
 
     @include mixinMediaQueryWidth(mqW6) {
@@ -161,6 +170,8 @@
     background-color: $pink;
     text-decoration: none;
     transition:.4s ease;
+
+    color: $black;
 
     @include mixinMediaQueryWidth(mqW6) {
         margin-right: 0%;

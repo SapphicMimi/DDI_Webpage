@@ -4,29 +4,12 @@
     flex-direction: column;
 }
 
-.titulo{
-    display: flex;
-
-    justify-content: center;
-}
-
 .carrousel {
     display: flex;
 }
 
 .carrousel-slide {
     display: flex;
-}
-
-.carrousel-titulo {
-    display: flex;
-}
-
-.titulo {
-    @include mixinMediaQueryWidth(mqW12) {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 .anime {
@@ -51,6 +34,18 @@
     }
 }
 
+.carrousel-titulo {
+    display: flex;
+
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+
+    justify-content: center;
+}
+
 /* Propiedad utilizada en el Carrousel de la Página de Inicio, dandole forma a los textos que indican a que pertenece la obra mostrada. */
 .pertenece {
     display: flex;
@@ -72,6 +67,15 @@
     }
 }
 
+.caja-comenzar {
+    display: flex;
+    justify-content: center;
+}
+
+.img-play {
+    display: flex;
+}
+
 .botones {
     /* En el contenedor inicial, necesito alinear los botones a la izquierda y al final. */
     justify-self: start;
@@ -84,11 +88,3 @@
     }
 }
 
-.caja-comenzar {
-    display: flex;
-    justify-content: center;
-}
-
-.img-play {
-    display: flex;
-}
